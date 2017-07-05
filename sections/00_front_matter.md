@@ -1,1 +1,1 @@
-# Manubot Rootstock: Manuscript Title
+# My Manuscript
