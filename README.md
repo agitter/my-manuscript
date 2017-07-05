@@ -9,7 +9,7 @@ To see what's incoming, check the [open pull requests](https://github.com/greene
 
 ## Continuous Integration
 
-[![Build Status](https://travis-ci.org/greenelab/manubot-rootstock.svg?branch=master)](https://travis-ci.org/greenelab/manubot-rootstock)
+[![Build Status](https://travis-ci.org/agitter/my-manuscript.svg?branch=master)](https://travis-ci.org/agitter/my-manuscript)
 
 When you make a pull request, Travis CI will test whether your changes break the build process to generate the formatted manuscript.
 The build process aims to detect common errors, such as invalid references.
