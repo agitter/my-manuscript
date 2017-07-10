@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`8d94998e89d6fe6f8503ba320a1cb4b520a4c095`](https://github.com/agitter/my-manuscript/commit/8d94998e89d6fe6f8503ba320a1cb4b520a4c095).
+[`ef03224fbaf6ea511f7abc8722c0634d6a35b707`](https://github.com/agitter/my-manuscript/commit/ef03224fbaf6ea511f7abc8722c0634d6a35b707).
