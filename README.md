@@ -1,11 +1,13 @@
-# manubot-rootstock
+# my-manuscript (cloned from [manubot-rootstock](https://github.com/greenelab/manubot-rootstock))
 
 A rootstock (or rhizome) is "a plant onto which another variety is grafted".
 This repository plays the role of a botanical trunk.
 Fork it and a manuscript will grow.
 
-The most current version of the `master` branch is built by continuous integration and [available via gh-pages](https://greenelab.github.io/manubot-rootstock/).
-To see what's incoming, check the [open pull requests](https://github.com/greenelab/manubot-rootstock/pulls).
+The most current version of the `master` branch is built by continuous integration and [available via gh-pages](https://agitter.github.io/my-manuscript/).
+To see what's incoming, check the [open pull requests](https://github.com/agitter/my-manuscript/pulls).
+
+This is a toy example to test cloning a new manuscript from manubot-rootstock.
 
 ## Continuous Integration
 
@@ -15,13 +17,13 @@ When you make a pull request, Travis CI will test whether your changes break the
 The build process aims to detect common errors, such as invalid references.
 If your build fails, see the Travis CI logs for the cause of failure and revise your pull request accordingly.
 
-When a pull request is merged, Travis CI performs the build and writes the results to the [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) and [`references`](https://github.com/greenelab/manubot-rootstock/tree/references) branches.
+When a pull request is merged, Travis CI performs the build and writes the results to the [`gh-pages`](https://github.com/agitter/my-manuscript/tree/gh-pages) and [`references`](https://github.com/agitter/my-manuscript/tree/references) branches.
 The `gh-pages` branch hosts the following URLs:
 
-+ **HTML manuscript** at https://greenelab.github.io/manubot-rootstock/<br>
-  short URL: https://git.io/vytJN
-+ **PDF manuscript** at https://greenelab.github.io/manubot-rootstock/manuscript.pdf<br>
-  short URL: https://git.io/vytJ5
++ **HTML manuscript** at https://agitter.github.io/my-manuscript/<br>
+  short URL: https://git.io/vQPxP
++ **PDF manuscript** at https://agitter.github.io/my-manuscript/manuscript.pdf<br>
+  short URL: https://git.io/vQPx7
 
 For continuous integration configuration details, see [`.travis.yml`](.travis.yml).
 
