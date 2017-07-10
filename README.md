@@ -1,13 +1,9 @@
 # my-manuscript (cloned from [manubot-rootstock](https://github.com/greenelab/manubot-rootstock))
 
-A rootstock (or rhizome) is "a plant onto which another variety is grafted".
-This repository plays the role of a botanical trunk.
-Fork it and a manuscript will grow.
+This is a toy example to test cloning a new manuscript from manubot-rootstock.
 
 The most current version of the `master` branch is built by continuous integration and [available via gh-pages](https://agitter.github.io/my-manuscript/).
 To see what's incoming, check the [open pull requests](https://github.com/agitter/my-manuscript/pulls).
-
-This is a toy example to test cloning a new manuscript from manubot-rootstock.
 
 ## Continuous Integration
 
