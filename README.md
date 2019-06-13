@@ -4,7 +4,7 @@
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://agitter.github.io/my-manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://agitter.github.io/my-manuscript/manuscript.pdf)
-[![Build Status](https://travis-ci.org/agitter/my-manuscript.svg?branch=master)](https://travis-ci.com/agitter/my-manuscript)
+[![Build Status](https://travis-ci.org/agitter/my-manuscript.svg?branch=master)](https://travis-ci.org/agitter/my-manuscript)
 
 ## Manuscript description
 
