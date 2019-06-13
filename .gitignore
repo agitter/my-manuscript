@@ -1,11 +1,15 @@
 # Generated manuscript output files
-output/index.html
-output/manuscript.pdf
-output/*.ots
+output/*
+!output/README.md
 
-# Generated reference files
-references/generated/*
-!references/generated/README.md
+webpage/v
+
+# When PDF building fails, a temporary symlink named images in the root
+# directory is not removed.
+/images
+
+# Manubot cache directory
+ci/cache
 
 # Python
 __pycache__/
@@ -17,3 +21,20 @@ __pycache__/
 # Misc temporary files
 *.bak
 
+# System specific files
+
+## Linux
+*~
+.Trash-*
+
+## macOS
+.DS_Store
+._*
+.Trashes
+
+## Windows
+Thumbs.db
+[Dd]esktop.ini
+
+## Text Editors
+.vscode

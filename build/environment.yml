@@ -1,19 +1,34 @@
 name: manubot
 channels:
-  - anaconda
   - conda-forge
 dependencies:
-  - anaconda::jinja2=2.9.6
-  - anaconda::pandas=0.20.2
-  - anaconda::python=3.6.0
-  - anaconda::requests=2.14.2
-  - bioconda::wkhtmltopdf=0.12.3
-  - conda-forge::pandoc=1.19.2
+  - cairo=1.14.12
+  - cairocffi=0.8.0
+  - cffi=1.12.3
+  - ghp-import=0.5.5
+  - jinja2=2.10
+  - jsonschema=3.0.1
+  - pandas=0.24.2
+  - pandoc=2.7.2
+  - pango=1.40.14
+  - pip=19.1
+  - psutil=5.6.2
+  - python=3.6.7
+  - pyyaml=5.1
+  - requests=2.22.0
+  - watchdog=0.8.3
   - pip:
-    - arxiv2bib==1.0.7
-    - bibtexparser==0.6.2
-    - ghp-import==0.5.5
-    - git+https://github.com/greenelab/manubot@b0da17625e1f12091159f15a329391b85c205565
-    - pybase62==0.3.2
+    - errorhandler==2.0.1
+    - git+https://github.com/manubot/manubot@2a99f4af4a352d2e082988d364e01e2e2809a87b
+    - jsonref==0.2
+    - opentimestamps-client==0.6.0
+    - opentimestamps==0.3.0
+    - pandoc-eqnos==1.4.3
+    - pandoc-fignos==1.4.2
+    - pandoc-tablenos==1.4.2
+    - pandoc-xnos==1.2.0
+    - pybase62==0.4.0
     - pysha3==1.0.2
-    - python-bitcoinlib==0.7.0
+    - python-bitcoinlib==0.9.0
+    - requests-cache==0.5.0
+    - weasyprint==0.42.3
