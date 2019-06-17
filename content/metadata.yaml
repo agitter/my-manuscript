@@ -25,3 +25,14 @@ author_info:
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
+  -
+    github: agitter
+    name: Anthony Gitter
+    initials: AG
+    orcid: 0000-0002-5324-9833
+    twitter: anthonygitter
+    email: gitter@biostat.wisc.edu
+    affiliations:
+      - Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America
+      - Morgridge Institute for Research, Madison, Wisconsin, United States of America
+    correspondence: true
