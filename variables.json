@@ -1,5 +1,5 @@
 {
-  "date": "June 15, 2019",
+  "date": "June 17, 2019",
   "authors": [
     {
       "github": "johndoe",
@@ -30,6 +30,23 @@
         1,
         2
       ]
+    },
+    {
+      "github": "agitter",
+      "name": "Anthony Gitter",
+      "initials": "AG",
+      "orcid": "0000-0002-5324-9833",
+      "twitter": "anthonygitter",
+      "email": "gitter@biostat.wisc.edu",
+      "affiliations": [
+        "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America",
+        "Morgridge Institute for Research, Madison, Wisconsin, United States of America"
+      ],
+      "correspondence": true,
+      "affiliation_numbers": [
+        3,
+        4
+      ]
     }
   ],
   "affiliations": [
@@ -40,13 +57,21 @@
     {
       "affiliation": "Department of Whatever, University of Something",
       "affiliation_number": 2
+    },
+    {
+      "affiliation": "Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America",
+      "affiliation_number": 3
+    },
+    {
+      "affiliation": "Morgridge Institute for Research, Madison, Wisconsin, United States of America",
+      "affiliation_number": 4
     }
   ],
   "ci_source": {
     "repo_slug": "agitter/my-manuscript",
     "repo_owner": "agitter",
     "repo_name": "my-manuscript",
-    "commit": "0430626645200aa49365cd60f2b822874f4964e3"
+    "commit": "62bcfec30051d4769eac87ea0210fcb367064b81"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -58,6 +83,6 @@
       "wikidata": 1,
       "total": 8
     },
-    "word_count": 1194
+    "word_count": 1227
   }
 }

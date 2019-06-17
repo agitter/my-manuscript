@@ -2,13 +2,14 @@
 author-meta:
 - John Doe
 - Jane Roe
-date-meta: '2019-06-15'
+- Anthony Gitter
+date-meta: '2019-06-17'
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
-title: Manuscript Title
+title: Demonstrating Manubot-based Writing
 ...
 
 
@@ -18,10 +19,10 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/0430626645200aa49365cd60f2b822874f4964e3/))
+([permalink](https://agitter.github.io/my-manuscript/v/62bcfec30051d4769eac87ea0210fcb367064b81/))
 was automatically generated
-from [agitter/my-manuscript@0430626](https://github.com/agitter/my-manuscript/tree/0430626645200aa49365cd60f2b822874f4964e3)
-on June 15, 2019.
+from [agitter/my-manuscript@62bcfec](https://github.com/agitter/my-manuscript/tree/62bcfec30051d4769eac87ea0210fcb367064b81)
+on June 17, 2019.
 </em></small>
 
 ## Authors
@@ -49,11 +50,27 @@ on June 15, 2019.
      Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
 
++ **Anthony Gitter**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-5324-9833](https://orcid.org/0000-0002-5324-9833)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [agitter](https://github.com/agitter)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [anthonygitter](https://twitter.com/anthonygitter)<br>
+  <small>
+     Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America; Morgridge Institute for Research, Madison, Wisconsin, United States of America
+  </small>
+
 
 
 ## Abstract {.page_break_before}
+This manuscript demonstrates the GitHub-based writing process for Manubot manuscripts.
 
 
+## Basic formatting
+
+Sections can be specified in separate Markdown files.
+Easy citation is one of attractive features of writing with Manubot [url:https://greenelab.github.io/meta-review/].
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
