@@ -3,7 +3,7 @@ author-meta:
 - John Doe
 - Jane Roe
 - Anthony Gitter
-date-meta: '2019-06-17'
+date-meta: '2019-06-18'
 keywords:
 - markdown
 - publishing
@@ -19,10 +19,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/62bcfec30051d4769eac87ea0210fcb367064b81/))
+([permalink](https://agitter.github.io/my-manuscript/v/11620527752766a0141c952360def56dda5288a9/))
 was automatically generated
-from [agitter/my-manuscript@62bcfec](https://github.com/agitter/my-manuscript/tree/62bcfec30051d4769eac87ea0210fcb367064b81)
-on June 17, 2019.
+from [agitter/my-manuscript@1162052](https://github.com/agitter/my-manuscript/tree/11620527752766a0141c952360def56dda5288a9)
+on June 18, 2019.
 </em></small>
 
 ## Authors
@@ -67,7 +67,7 @@ on June 17, 2019.
 This manuscript demonstrates the GitHub-based writing process for Manubot manuscripts.
 
 
-## Basic formatting
+## Introduction
 
 Sections can be specified in separate Markdown files.
 Easy citation is one of attractive features of writing with Manubot [url:https://greenelab.github.io/meta-review/].
