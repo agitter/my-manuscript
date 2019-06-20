@@ -3,7 +3,7 @@ author-meta:
 - John Doe
 - Jane Roe
 - Anthony Gitter
-date-meta: '2019-06-18'
+date-meta: '2019-06-20'
 keywords:
 - markdown
 - publishing
@@ -19,10 +19,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/11620527752766a0141c952360def56dda5288a9/))
+([permalink](https://agitter.github.io/my-manuscript/v/dd3b2c4c0d0ff8b12b4d421cd33b47efff3c3158/))
 was automatically generated
-from [agitter/my-manuscript@1162052](https://github.com/agitter/my-manuscript/tree/11620527752766a0141c952360def56dda5288a9)
-on June 18, 2019.
+from [agitter/my-manuscript@dd3b2c4](https://github.com/agitter/my-manuscript/tree/dd3b2c4c0d0ff8b12b4d421cd33b47efff3c3158)
+on June 20, 2019.
 </em></small>
 
 ## Authors
@@ -70,7 +70,7 @@ This manuscript demonstrates the GitHub-based writing process for Manubot manusc
 ## Introduction
 
 Sections can be specified in separate Markdown files.
-Easy citation is one of attractive features of writing with Manubot [url:https://greenelab.github.io/meta-review/].
+Easy citation is one of attractive features of writing with Manubot [@1GGGHdsew].
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
