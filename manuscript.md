@@ -19,9 +19,9 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/dd3b2c4c0d0ff8b12b4d421cd33b47efff3c3158/))
+([permalink](https://agitter.github.io/my-manuscript/v/3cf16a232a3fdc5e86c6a8ed42c8f43224d49060/))
 was automatically generated
-from [agitter/my-manuscript@dd3b2c4](https://github.com/agitter/my-manuscript/tree/dd3b2c4c0d0ff8b12b4d421cd33b47efff3c3158)
+from [agitter/my-manuscript@3cf16a2](https://github.com/agitter/my-manuscript/tree/3cf16a232a3fdc5e86c6a8ed42c8f43224d49060)
 on June 20, 2019.
 </em></small>
 
@@ -71,6 +71,7 @@ This manuscript demonstrates the GitHub-based writing process for Manubot manusc
 
 Sections can be specified in separate Markdown files.
 Easy citation is one of attractive features of writing with Manubot [@1GGGHdsew].
+Some of our favorite papers are [@1E9EdQDCc; @P88nl7sq; @OgEAUK3F].
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
