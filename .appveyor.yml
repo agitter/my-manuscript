@@ -21,3 +21,10 @@ test_script:
   - bash build/build.sh
 
 build: off
+
+cache:
+  - ci/cache
+
+artifacts:
+  - path: output/manuscript.pdf
+    name: Manuscript PDF
