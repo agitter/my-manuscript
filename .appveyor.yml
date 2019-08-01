@@ -1,5 +1,10 @@
 # Adapted from the .travis.yml config file and
 # https://www.appveyor.com/docs/getting-started-with-appveyor-for-linux/
+branches:
+  except:
+    - gh-pages
+    - output
+
 image: ubuntu
 services:
   - docker
@@ -28,3 +33,6 @@ cache:
 artifacts:
   - path: output/manuscript.pdf
     name: Manuscript PDF
+
+on_success:
+  - echo "Updated PDF available from https://ci.appveyor.com/api/projects/$APPVEYOR_REPO_NAME/artifacts/output/manuscript.pdf?branch=$APPVEYOR_REPO_BRANCH"
