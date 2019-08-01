@@ -19,9 +19,9 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/5be1d8d8cf3cdf1a32332927147ade98a4b6a5bf/))
+([permalink](https://agitter.github.io/my-manuscript/v/b55fb836699fa6deefd2684780c9437dbbded18f/))
 was automatically generated
-from [agitter/my-manuscript@5be1d8d](https://github.com/agitter/my-manuscript/tree/5be1d8d8cf3cdf1a32332927147ade98a4b6a5bf)
+from [agitter/my-manuscript@b55fb83](https://github.com/agitter/my-manuscript/tree/b55fb836699fa6deefd2684780c9437dbbded18f)
 on August 1, 2019.
 </em></small>
 
@@ -178,12 +178,12 @@ Citation by Wikidata ID [@QhC8yJ7V].
 
 Citation by ISBN [@zBPP9YKu].
 
-Citation by URL [@OvL2rC9o].
+Citation by URL [@1GGGHdsew].
 
 Citation by tag [@PZMP42Ak].
 
 Multiple citations can be put inside the same set of brackets [@IhliSZDo; @PZMP42Ak; @zBPP9YKu].
-Manubot plugins provide easier, more convenient visualization of and navigation between citations [@6acIRW4q; @7XVI5bB4; @PyydLU5l; @PZMP42Ak].
+Manubot plugins provide easier, more convenient visualization of and navigation between citations [@YuJbg3zO; @7XVI5bB4; @PyydLU5l; @PZMP42Ak].
 
 ## Referencing figures, tables, equations
 
@@ -239,17 +239,17 @@ Exporting PDF manuscript
 ![
 **A square image at actual size and with a bottom caption.**
 Loaded from the latest version of image on GitHub.
-](https://raw.githubusercontent.com/greenelab/manubot-resources/master/test/square.png "Square image"){#fig:square-image}
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
 
 ![
 **An image too wide to fit within page at full size.**
 Loaded from a specific (hashed) version of the image on GitHub.
-](https://raw.githubusercontent.com/manubot/resources/bfd6afcd9f47d7da34362e62a005d86e85aef25a/test/wide.png "Wide image"){#fig:wide-image}
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png "Wide image"){#fig:wide-image}
 
 ![
 **A tall image with a specified height.**
 Loaded from a specific (hashed) version of the image on GitHub.
-](https://raw.githubusercontent.com/manubot/resources/bfd6afcd9f47d7da34362e62a005d86e85aef25a/test/tall.png "Tall image"){#fig:tall-image height=3in}
+](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png "Tall image"){#fig:tall-image height=3in}
 
 ![
 **A vector `.svg` image loaded from GitHub.**
