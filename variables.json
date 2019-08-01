@@ -1,5 +1,5 @@
 {
-  "date": "June 20, 2019",
+  "date": "August 1, 2019",
   "authors": [
     {
       "github": "johndoe",
@@ -71,7 +71,7 @@
     "repo_slug": "agitter/my-manuscript",
     "repo_owner": "agitter",
     "repo_name": "my-manuscript",
-    "commit": "3cf16a232a3fdc5e86c6a8ed42c8f43224d49060"
+    "commit": "5be1d8d8cf3cdf1a32332927147ade98a4b6a5bf"
   },
   "manuscript_stats": {
     "reference_counts": {
