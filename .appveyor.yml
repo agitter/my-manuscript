@@ -5,9 +5,6 @@ skip_branch_with_pr: true
 branches:
   only:
     - master
-  except:
-    - gh-pages
-    - output
 
 image: ubuntu
 services:
