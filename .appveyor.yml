@@ -10,21 +10,23 @@ image: ubuntu
 services:
   - docker
 
-install:
-  - wget https://repo.continuum.io/miniconda/Miniconda3-4.6.14-Linux-x86_64.sh
-    --output-document miniconda.sh
-  - bash miniconda.sh -b -p $HOME/miniconda
-  - source $HOME/miniconda/etc/profile.d/conda.sh
-  - hash -r
-  - conda config
-    --set always_yes yes
-    --set changeps1 no
-  - conda env create --quiet --file build/environment.yml
-  - conda list --name manubot
-  - conda activate manubot
+#install:
+#  - wget https://repo.continuum.io/miniconda/Miniconda3-4.6.14-Linux-x86_64.sh
+#    --output-document miniconda.sh
+#  - bash miniconda.sh -b -p $HOME/miniconda
+#  - source $HOME/miniconda/etc/profile.d/conda.sh
+#  - hash -r
+#  - conda config
+#    --set always_yes yes
+#    --set changeps1 no
+#  - conda env create --quiet --file build/environment.yml
+#  - conda list --name manubot
+#  - conda activate manubot
     
 test_script:
-  - bash build/build.sh
+#  - bash build/build.sh
+  - mkdir -p output
+  - touch output/manuscript.pdf
 
 build: off
 
@@ -41,4 +43,5 @@ on_success:
 
 notifications:
   - provider: GitHubPullRequest
-    template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})"
+    template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})
+      {{#jobs}}{{#artifacts}}{{permalink}}{{/artifacts}}{{/jobs}}"
