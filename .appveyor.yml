@@ -39,3 +39,7 @@ artifacts:
 on_success:
   - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
   - echo "Updated PDF available from https://ci.appveyor.com/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/output%2Fmanuscript.pdf"
+
+notifications:
+  - provider: GitHubPullRequest
+    template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})"
