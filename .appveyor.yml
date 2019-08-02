@@ -11,15 +11,6 @@ image: ubuntu
 services:
   - docker
 
-init:
-  - echo $APPVEYOR_PROJECT_ID
-  - echo $APPVEYOR_BUILD_ID
-  - echo $APPVEYOR_BUILD_NUMBER
-  - echo $APPVEYOR_BUILD_VERSION
-  - echo $APPVEYOR_JOB_ID
-  - echo $APPVEYOR_JOB_NUMBER
-  - echo $APPVEYOR_REPO_COMMIT
-
 install:
   - wget https://repo.continuum.io/miniconda/Miniconda3-4.6.14-Linux-x86_64.sh
     --output-document miniconda.sh
