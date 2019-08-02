@@ -28,6 +28,7 @@ test_script:
   - cp output/manuscript.pdf manuscript-$APPVEYOR_REPO_COMMIT.pdf
   - cp output/manuscript.pdf manuscript-$APPVEYOR_BUILD_ID.pdf
   - cp output/manuscript.pdf manuscript-$APPVEYOR_BUILD_VERSION.pdf
+  - cp output/manuscript.pdf manuscript-$APPVEYOR_BUILD_VERSION-$APPVEYOR_REPO_COMMIT.pdf
 
 build: off
 
@@ -43,6 +44,8 @@ artifacts:
     name: Manuscript PDF with build ID
   - path: manuscript-$APPVEYOR_BUILD_VERSION.pdf
     name: Manuscript PDF with build version
+  - path: manuscript-$APPVEYOR_BUILD_VERSION-$APPVEYOR_REPO_COMMIT.pdf
+    name: Manuscript PDF with build version and comit
 
 on_success:
   - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
