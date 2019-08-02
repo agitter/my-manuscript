@@ -25,6 +25,9 @@ install:
     
 test_script:
   - bash build/build.sh
+  - cp output/manuscript.pdf manuscript-$APPVEYOR_REPO_COMMIT.pdf
+  - cp output/manuscript.pdf manuscript-$APPVEYOR_BUILD_ID.pdf
+  - cp output/manuscript.pdf manuscript-$APPVEYOR_BUILD_VERSION.pdf
 
 build: off
 
@@ -34,6 +37,12 @@ cache:
 artifacts:
   - path: output/manuscript.pdf
     name: Manuscript PDF
+  - path: manuscript-$APPVEYOR_REPO_COMMIT.pdf
+    name: Manuscript PDF with commit
+  - path: manuscript-$APPVEYOR_BUILD_ID.pdf
+    name: Manuscript PDF with build ID
+  - path: manuscript-$APPVEYOR_BUILD_VERSION.pdf
+    name: Manuscript PDF with build version
 
 on_success:
   - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
