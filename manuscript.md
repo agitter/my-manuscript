@@ -19,9 +19,9 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/ccec758dd8f5f34d50f03f18df09315e64dc0cd9/))
+([permalink](https://agitter.github.io/my-manuscript/v/7520da8cc98987aa9719647b19cb454b4ab07839/))
 was automatically generated
-from [agitter/my-manuscript@ccec758](https://github.com/agitter/my-manuscript/tree/ccec758dd8f5f34d50f03f18df09315e64dc0cd9)
+from [agitter/my-manuscript@7520da8](https://github.com/agitter/my-manuscript/tree/7520da8cc98987aa9719647b19cb454b4ab07839)
 on August 2, 2019.
 </em></small>
 
@@ -74,6 +74,10 @@ Easy citation is one of attractive features of writing with Manubot [@1GGGHdsew]
 Some of our favorite papers are [@1E9EdQDCc; @P88nl7sq; @OgEAUK3F].
 
 Let's see how a new reference looks [@b2hFuMuT].
+
+Testing whether build artifacts are uploaded from PRs originating from foreign repositories.
+Notifications make it easy to view the latest manuscript PDF.
+
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.
