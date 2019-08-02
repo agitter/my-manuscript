@@ -29,10 +29,8 @@ install:
 test_script:
   - bash build/build.sh
   - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${APPVEYOR_REPO_COMMIT:0:7}.pdf
-  - echo $MANUSCRIPT_FILENAME
   - cp output/manuscript.pdf $MANUSCRIPT_FILENAME
-  - ls
-  - appveyor PushArtifact <file_name> $MANUSCRIPT_FILENAME
+  - appveyor PushArtifact $MANUSCRIPT_FILENAME
 
 build: off
 
