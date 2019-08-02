@@ -29,16 +29,15 @@ install:
 test_script:
   - bash build/build.sh
   - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${APPVEYOR_REPO_COMMIT:0:7}.pdf
+  - echo $MANUSCRIPT_FILENAME
+  - ls
   - cp output/manuscript.pdf $MANUSCRIPT_FILENAME
+  - appveyor PushArtifact <file_name> $MANUSCRIPT_FILENAME
 
 build: off
 
 cache:
   - ci/cache
-
-artifacts:
-  - path: $MANUSCRIPT_FILENAME
-    name: Manuscript PDF
 
 on_success:
   - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
