@@ -3,9 +3,8 @@
 skip_branch_with_pr: true
 
 branches:
-  except:
-    - gh-pages
-    - output
+  only:
+    - master
 
 image: ubuntu
 services:
@@ -38,4 +37,11 @@ artifacts:
 
 on_success:
   - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
-  - echo "Updated PDF available from https://ci.appveyor.com/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/output%2Fmanuscript.pdf"
+  - echo "Updated PDF available from https://ci.appveyor.com/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/output/manuscript.pdf"
+
+# Notifications use Mustache templates http://mustache.github.io/mustache.5.html
+# See https://www.appveyor.com/docs/notifications/#customizing-message-template for available variables
+notifications:
+  - provider: GitHubPullRequest
+    template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})
+      {{#jobs}}{{#artifacts}}<br>[Updated {{fileName}}]({{permalink}}){{/artifacts}}{{/jobs}}"
