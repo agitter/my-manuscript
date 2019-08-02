@@ -28,6 +28,7 @@ test_script:
   - mkdir -p output
   - touch output/manuscript.pdf
   - touch output/tmp.text
+  - exit 1
 
 build: off
 
@@ -42,7 +43,7 @@ artifacts:
 
 on_success:
   - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
-  - echo "Updated PDF available from https://ci.appveyor.com/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/output%2Fmanuscript.pdf"
+  - echo "Updated PDF available from https://ci.appveyor.com/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/output/manuscript.pdf"
 
 notifications:
   - provider: GitHubPullRequest
