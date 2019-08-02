@@ -27,6 +27,7 @@ test_script:
 #  - bash build/build.sh
   - mkdir -p output
   - touch output/manuscript.pdf
+  - touch output/tmp.text
 
 build: off
 
@@ -36,6 +37,8 @@ cache:
 artifacts:
   - path: output/manuscript.pdf
     name: Manuscript PDF
+  - path: output/tmp.text
+    name: Temporary
 
 on_success:
   - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
@@ -44,4 +47,4 @@ on_success:
 notifications:
   - provider: GitHubPullRequest
     template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})
-      {{#jobs}}{{#artifacts}}{{permalink}}{{/artifacts}}{{/jobs}}"
+      {{#jobs}}{{#artifacts}}<br>[Updated {{fileName}}]({{permalink}}){{/artifacts}}{{/jobs}}"
