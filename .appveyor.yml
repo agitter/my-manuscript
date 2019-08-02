@@ -42,4 +42,5 @@ artifacts:
     name: Manuscript PDF
 
 on_success:
-  - echo "Updated PDF available from https://ci.appveyor.com/api/projects/$APPVEYOR_REPO_NAME/artifacts/output/manuscript.pdf?branch=$APPVEYOR_REPO_BRANCH"
+  - echo "Artifacts available from https://ci.appveyor.com/api/projects/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
+  - echo "Updated PDF available from https://ci.appveyor.com/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/output%2Fmanuscript.pdf"
