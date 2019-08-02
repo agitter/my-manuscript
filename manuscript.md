@@ -3,7 +3,7 @@ author-meta:
 - John Doe
 - Jane Roe
 - Anthony Gitter
-date-meta: '2019-08-01'
+date-meta: '2019-08-02'
 keywords:
 - markdown
 - publishing
@@ -19,10 +19,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/e62c70fbd8cbeee487a488270582a0ea004c32a2/))
+([permalink](https://agitter.github.io/my-manuscript/v/4f80324800015909f1b5f71499fa7d817600a5fd/))
 was automatically generated
-from [agitter/my-manuscript@e62c70f](https://github.com/agitter/my-manuscript/tree/e62c70fbd8cbeee487a488270582a0ea004c32a2)
-on August 1, 2019.
+from [agitter/my-manuscript@4f80324](https://github.com/agitter/my-manuscript/tree/4f80324800015909f1b5f71499fa7d817600a5fd)
+on August 2, 2019.
 </em></small>
 
 ## Authors
@@ -73,6 +73,7 @@ Sections can be specified in separate Markdown files.
 Easy citation is one of attractive features of writing with Manubot [@1GGGHdsew].
 Some of our favorite papers are [@1E9EdQDCc; @P88nl7sq; @OgEAUK3F].
 
+Let's see how a new reference looks [@b2hFuMuT].
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.

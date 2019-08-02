@@ -1,5 +1,5 @@
 {
-  "date": "August 1, 2019",
+  "date": "August 2, 2019",
   "authors": [
     {
       "github": "johndoe",
@@ -71,19 +71,19 @@
     "repo_slug": "agitter/my-manuscript",
     "repo_owner": "agitter",
     "repo_name": "my-manuscript",
-    "commit": "e62c70fbd8cbeee487a488270582a0ea004c32a2"
+    "commit": "4f80324800015909f1b5f71499fa7d817600a5fd"
   },
   "manuscript_stats": {
     "reference_counts": {
       "arxiv": 1,
-      "doi": 4,
+      "doi": 5,
       "isbn": 1,
       "pmcid": 1,
       "pmid": 2,
       "url": 1,
       "wikidata": 1,
-      "total": 11
+      "total": 12
     },
-    "word_count": 1235
+    "word_count": 1243
   }
 }
