@@ -46,4 +46,4 @@ on_success:
 notifications:
   - provider: GitHubPullRequest
     template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})
-      {{#jobs}}{{#artifacts}}<br>[Updated {{fileName}}]({{permalink}}){{/artifacts}}{{/jobs}}"
+      {{#jobs}}{{#artifacts}}<br>Generated [{{fileName}}] for review({{permalink}}){{/artifacts}}{{/jobs}}"
