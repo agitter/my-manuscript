@@ -13,9 +13,10 @@ branches:
 # Only build on the merge commits from a pull request branch to master
 # and not on other master branch commits
 # See https://www.appveyor.com/docs/how-to/filtering-commits/#include-commits
-# and https://regex101.com/r/L8Uvb2/3
-only_commits:
-  message: /Merge \b([a-f0-9]{7})\b into \b([a-f0-9]{7})\b/
+# and https://regex101.com/r/L8Uvb2/4
+# This does not work as intended https://github.com/agitter/my-manuscript/pull/8
+#only_commits:
+#  message: /Merge \b([a-f0-9]{7,40})\b into \b([a-f0-9]{7,40})\b/
 
 image: ubuntu
 services:
