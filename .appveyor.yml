@@ -2,6 +2,8 @@
 # https://www.appveyor.com/docs/getting-started-with-appveyor-for-linux/
 skip_branch_with_pr: true
 
+# This alone is not sufficient to avoid running AppVeyor on the
+# output branch commits made by Travis CI
 branches:
   only:
     - master
