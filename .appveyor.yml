@@ -13,9 +13,9 @@ branches:
 # Only build on the merge commits from a pull request branch to master
 # and not on other master branch commits
 # See https://www.appveyor.com/docs/how-to/filtering-commits/#include-commits
-# and https://regex101.com/r/L8Uvb2/3
+# and https://regex101.com/r/L8Uvb2/4
 only_commits:
-  message: /Merge \b([a-f0-9]{7})\b into \b([a-f0-9]{7})\b/
+  message: /Merge \b([a-f0-9]{7,40})\b into \b([a-f0-9]{7,40})\b/
 
 image: ubuntu
 services:
