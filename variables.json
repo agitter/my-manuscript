@@ -71,7 +71,7 @@
     "repo_slug": "agitter/my-manuscript",
     "repo_owner": "agitter",
     "repo_name": "my-manuscript",
-    "commit": "83a7f4abe6bda597c8b522505dbf0199724b8344"
+    "commit": "7c68e5afa86c395286d0b7149094943ab68a8faa"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -84,6 +84,6 @@
       "wikidata": 1,
       "total": 12
     },
-    "word_count": 1265
+    "word_count": 1278
   }
 }

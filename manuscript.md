@@ -19,9 +19,9 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/83a7f4abe6bda597c8b522505dbf0199724b8344/))
+([permalink](https://agitter.github.io/my-manuscript/v/7c68e5afa86c395286d0b7149094943ab68a8faa/))
 was automatically generated
-from [agitter/my-manuscript@83a7f4a](https://github.com/agitter/my-manuscript/tree/83a7f4abe6bda597c8b522505dbf0199724b8344)
+from [agitter/my-manuscript@7c68e5a](https://github.com/agitter/my-manuscript/tree/7c68e5afa86c395286d0b7149094943ab68a8faa)
 on August 3, 2019.
 </em></small>
 
@@ -77,6 +77,7 @@ Let's see how a new reference looks [@b2hFuMuT].
 
 Testing whether build artifacts are uploaded from PRs originating from foreign repositories.
 Notifications make it easy to view the latest manuscript PDF.
+Testing whether master branch merge commits from pull requests trigger an AppVeyor build.
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
