@@ -4,9 +4,18 @@ skip_branch_with_pr: true
 
 # This alone is not sufficient to avoid running AppVeyor on the
 # output branch commits made by Travis CI
+# Need to also specify branches to build as master only in the
+# AppVeyor project settings UI
 branches:
   only:
     - master
+
+# Only build on the merge commits from a pull request branch to master
+# and not on other master branch commits
+# See https://www.appveyor.com/docs/how-to/filtering-commits/#include-commits
+# and https://regex101.com/r/L8Uvb2/3
+only_commits:
+  message: /Merge \b([a-f0-9]{7})\b into \b([a-f0-9]{7})\b/
 
 image: ubuntu
 services:
