@@ -3,7 +3,7 @@ author-meta:
 - John Doe
 - Jane Roe
 - Anthony Gitter
-date-meta: '2019-08-02'
+date-meta: '2019-08-03'
 keywords:
 - markdown
 - publishing
@@ -19,10 +19,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/f53c2acf70b615f3b263b3066ed0f1008237d8a8/))
+([permalink](https://agitter.github.io/my-manuscript/v/9c4198d5ebd33e320aa6191064c12ef3dff6cd62/))
 was automatically generated
-from [agitter/my-manuscript@f53c2ac](https://github.com/agitter/my-manuscript/tree/f53c2acf70b615f3b263b3066ed0f1008237d8a8)
-on August 2, 2019.
+from [agitter/my-manuscript@9c4198d](https://github.com/agitter/my-manuscript/tree/9c4198d5ebd33e320aa6191064c12ef3dff6cd62)
+on August 3, 2019.
 </em></small>
 
 ## Authors
