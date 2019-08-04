@@ -3,7 +3,7 @@ author-meta:
 - John Doe
 - Jane Roe
 - Anthony Gitter
-date-meta: '2019-08-03'
+date-meta: '2019-08-04'
 keywords:
 - markdown
 - publishing
@@ -19,10 +19,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/8689b1bae38f4af542d48098fa0f7d703e753ab8/))
+([permalink](https://agitter.github.io/my-manuscript/v/c98407827d8aba4ffb421c8a226c4c198cbf79f1/))
 was automatically generated
-from [agitter/my-manuscript@8689b1b](https://github.com/agitter/my-manuscript/tree/8689b1bae38f4af542d48098fa0f7d703e753ab8)
-on August 3, 2019.
+from [agitter/my-manuscript@c984078](https://github.com/agitter/my-manuscript/tree/c98407827d8aba4ffb421c8a226c4c198cbf79f1)
+on August 4, 2019.
 </em></small>
 
 ## Authors
@@ -74,11 +74,6 @@ Easy citation is one of attractive features of writing with Manubot [@1GGGHdsew]
 Some of our favorite papers are [@1E9EdQDCc; @P88nl7sq; @OgEAUK3F].
 
 Let's see how a new reference looks [@b2hFuMuT].
-
-Testing whether build artifacts are uploaded from PRs originating from foreign repositories.
-Notifications make it easy to view the latest manuscript PDF.
-Testing `Do not build on "Push" events`.
-Testing `Do not build on "Push" events` with a pull request with correct build number.
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
