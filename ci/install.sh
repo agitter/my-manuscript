@@ -16,3 +16,4 @@ conda config \
   --set changeps1 no
 conda env create --quiet --file build/environment.yml
 conda list --name manubot
+conda activate manubot
