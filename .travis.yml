@@ -7,9 +7,7 @@ branches:
   only:
     - master
 install:
-  - ls /home/travis/.travis
-  - cat /home/travis/.travis/functions
-  - bash ci/install.sh
+  - source ci/install.sh
 script:
   - bash build/build.sh
 cache:
