@@ -21,6 +21,7 @@ branches:
 only_commits:
   files:
     - content/
+    -.appveyor.yml
 
 image: ubuntu
 services:
@@ -31,7 +32,8 @@ install:
     
 test_script:
   - bash build/build.sh
-  - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${APPVEYOR_REPO_COMMIT:0:7}.pdf
+  - TRIGGERING_COMMIT = ${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
+  - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.pdf
   - cp output/manuscript.pdf $MANUSCRIPT_FILENAME
   - appveyor PushArtifact $MANUSCRIPT_FILENAME
 
@@ -49,4 +51,5 @@ on_success:
 notifications:
   - provider: GitHubPullRequest
     template: "{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})
-      {{#jobs}}{{#artifacts}}<br>Generated [{{fileName}}]({{permalink}}) for review{{/artifacts}}{{/jobs}}"
+      {{#jobs}}{{#artifacts}}<br>Generated [{{fileName}}]({{permalink}}) for review{{/artifacts}}{{/jobs}}
+      <br>$TRIGGERING_COMMIT"
