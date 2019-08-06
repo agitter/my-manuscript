@@ -43,8 +43,8 @@ cache:
   - ci/cache
 
 on_success:
-  - echo "Artifacts available from https://ci.appveyor.com/project/$APPVEYOR_REPO_NAME/builds/$APPVEYOR_BUILD_ID/artifacts"
-  - echo "Updated PDF available from https://ci.appveyor.com/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME"
+  - echo "Artifacts available from $APPVEYOR_URL/project/$APPVEYOR_ACCOUNT_NAME/$APPVEYOR_PROJECT_SLUG/builds/$APPVEYOR_BUILD_ID/artifacts"
+  - echo "Updated PDF available from $APPVEYOR_URL/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME"
 
 # Notifications use Mustache templates http://mustache.github.io/mustache.5.html
 # See https://www.appveyor.com/docs/notifications/#customizing-message-template for available variables
