@@ -21,7 +21,7 @@ branches:
 only_commits:
   files:
     - content/
-    -.appveyor.yml
+    - .appveyor.yml
 
 image: ubuntu
 services:
