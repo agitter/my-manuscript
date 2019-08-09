@@ -82,6 +82,7 @@ ghp-import \
 
 # Deploy the webpage directory to gh-pages
 ghp-import \
+  --no-jekyll \
   --follow-links \
   --push \
   --branch=gh-pages \
