@@ -19,9 +19,9 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/dc1d3d114382d963e74239ff03a8da990c156da3/))
+([permalink](https://agitter.github.io/my-manuscript/v/b50b823a47a171b7502c5a3508e170f5ebc6f136/))
 was automatically generated
-from [agitter/my-manuscript@dc1d3d1](https://github.com/agitter/my-manuscript/tree/dc1d3d114382d963e74239ff03a8da990c156da3)
+from [agitter/my-manuscript@b50b823](https://github.com/agitter/my-manuscript/tree/b50b823a47a171b7502c5a3508e170f5ebc6f136)
 on August 9, 2019.
 </em></small>
 
