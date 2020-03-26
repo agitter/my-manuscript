@@ -19,7 +19,7 @@ jobs:
         run: echo "$GITHUB_CONTEXT"
       - name: Create message
         run: |
-          ARTIFACT_MESSAGE="Test message set in environment variable"
+          ARTIFACT_MESSAGE="Test github-script message set in environment variable"
           echo "::set-env name=ARTIFACT_MESSAGE::$ARTIFACT_MESSAGE"
       - name: Test comment github-script
         uses: actions/github-script@0.9.0
@@ -32,6 +32,10 @@ jobs:
               repo: context.repo.repo,
               body: '${{ env.ARTIFACT_MESSAGE }}'
             })
+      - name: Update message
+        run: |
+          ARTIFACT_MESSAGE="Test comment-on-pr message set in environment variable"
+          echo "::set-env name=ARTIFACT_MESSAGE::$ARTIFACT_MESSAGE"
       - name: Test comment unsplash/comment-on-pr
         uses: unsplash/comment-on-pr@master
         env:
