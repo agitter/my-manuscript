@@ -28,12 +28,6 @@ jobs:
               repo: context.repo.repo,
               body: 'Test message from github-script'
             })
-      - name: Test comment harupy/comment-on-pr
-        uses: harupy/comment-on-pr@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          filename: template.md
       - name: Test comment unsplash/comment-on-pr
         uses: unsplash/comment-on-pr@master
         env:
