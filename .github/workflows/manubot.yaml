@@ -29,14 +29,14 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Test message from github-script. ${{ env.ARTIFACT_MESSAGE }}'
+              body: 'Test message from github-script. '${{ env.ARTIFACT_MESSAGE }}
             })
       - name: Test comment unsplash/comment-on-pr
         uses: unsplash/comment-on-pr@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: "Test message from unsplash/comment-on-pr. ${{ env.ARTIFACT_MESSAGE }}"
+          msg: "Test message from unsplash/comment-on-pr. "${{ env.ARTIFACT_MESSAGE }}
       - name: Set Environment Variables
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
