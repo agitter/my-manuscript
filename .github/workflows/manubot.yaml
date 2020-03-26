@@ -17,6 +17,9 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
+      - name: Create message
+        run: |
+          ARTIFACT_MESSAGE="Here is the message"
       - name: Test comment github-script
         uses: actions/github-script@0.9.0
         with:
@@ -26,14 +29,14 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: 'Test message from github-script'
+              body: 'Test message from github-script. ${{ env.ARTIFACT_MESSAGE }}'
             })
       - name: Test comment unsplash/comment-on-pr
         uses: unsplash/comment-on-pr@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: "Test message from unsplash/comment-on-pr"
+          msg: "Test message from unsplash/comment-on-pr. ${{ env.ARTIFACT_MESSAGE }}"
       - name: Set Environment Variables
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
