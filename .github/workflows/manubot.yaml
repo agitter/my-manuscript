@@ -28,8 +28,6 @@ jobs:
               repo: context.repo.repo,
               body: 'Test message from github-script'
             })
-      - name: Prep harupy/comment-on-pr
-        run: echo "Test message from harupy/comment-on-pr" > .github/workflows/template.md
       - name: Test comment harupy/comment-on-pr
         uses: harupy/comment-on-pr@master
         env:
