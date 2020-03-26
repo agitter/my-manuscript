@@ -28,14 +28,20 @@ jobs:
               repo: context.repo.repo,
               body: 'Test message from github-script'
             })
-      - name: Prep comment-on-pr
-        run: echo "Test message from comment-on-pr" > template.md
-      - name: Test comment comment-on-pr
+      - name: Prep harupy/comment-on-pr
+        run: echo "Test message from harupy/comment-on-pr" > template.md
+      - name: Test comment harupy/comment-on-pr
         uses: harupy/comment-on-pr@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           filename: template.md
+      - name: Test comment unsplash/comment-on-pr
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: "Test message from unsplash/comment-on-pr"
       - name: Set Environment Variables
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
