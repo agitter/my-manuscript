@@ -3,12 +3,107 @@ author-meta:
 - John Doe
 - Jane Roe
 - Anthony Gitter
-date-meta: '2019-08-09'
+bibliography:
+- content/manual-references.json
+date-meta: '2020-03-26'
+header-includes: '<!--
+
+  Manubot generated metadata rendered from header-includes-template.html.
+
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+
+  -->
+
+  <meta name="dc.format" content="text/html" />
+
+  <meta name="dc.title" content="Demonstrating Manubot-based Writing" />
+
+  <meta name="citation_title" content="Demonstrating Manubot-based Writing" />
+
+  <meta property="og:title" content="Demonstrating Manubot-based Writing" />
+
+  <meta property="twitter:title" content="Demonstrating Manubot-based Writing" />
+
+  <meta name="dc.date" content="2020-03-26" />
+
+  <meta name="citation_publication_date" content="2020-03-26" />
+
+  <meta name="dc.language" content="en-US" />
+
+  <meta name="citation_language" content="en-US" />
+
+  <meta name="dc.relation.ispartof" content="Manubot" />
+
+  <meta name="dc.publisher" content="Manubot" />
+
+  <meta name="citation_journal_title" content="Manubot" />
+
+  <meta name="citation_technical_report_institution" content="Manubot" />
+
+  <meta name="citation_author" content="John Doe" />
+
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+
+  <meta name="twitter:creator" content="@johndoe" />
+
+  <meta name="citation_author" content="Jane Roe" />
+
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+
+  <meta name="citation_author" content="Anthony Gitter" />
+
+  <meta name="citation_author_institution" content="Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America" />
+
+  <meta name="citation_author_institution" content="Morgridge Institute for Research, Madison, Wisconsin, United States of America" />
+
+  <meta name="citation_author_orcid" content="0000-0002-5324-9833" />
+
+  <meta name="twitter:creator" content="@anthonygitter" />
+
+  <link rel="canonical" href="https://agitter.github.io/my-manuscript/" />
+
+  <meta property="og:url" content="https://agitter.github.io/my-manuscript/" />
+
+  <meta property="twitter:url" content="https://agitter.github.io/my-manuscript/" />
+
+  <meta name="citation_fulltext_html_url" content="https://agitter.github.io/my-manuscript/" />
+
+  <meta name="citation_pdf_url" content="https://agitter.github.io/my-manuscript/manuscript.pdf" />
+
+  <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
+
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/" />
+
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/" />
+
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/manuscript.pdf" />
+
+  <meta property="og:type" content="article" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+
+  <meta name="theme-color" content="#ad1457" />
+
+  <!-- end Manubot generated metadata -->'
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
+manubot-clear-requests-cache: false
+manubot-output-bibliography: output/references.json
+manubot-output-citekeys: output/citations.tsv
+manubot-requests-cache-path: ci/cache/requests-cache
 title: Demonstrating Manubot-based Writing
 ...
 
@@ -19,10 +114,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/b50b823a47a171b7502c5a3508e170f5ebc6f136/))
+([permalink](https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/))
 was automatically generated
-from [agitter/my-manuscript@b50b823](https://github.com/agitter/my-manuscript/tree/b50b823a47a171b7502c5a3508e170f5ebc6f136)
-on August 9, 2019.
+from [agitter/my-manuscript@ce6d7ea](https://github.com/agitter/my-manuscript/tree/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7)
+on March 26, 2020.
 </em></small>
 
 ## Authors
@@ -70,10 +165,10 @@ This manuscript demonstrates the GitHub-based writing process for Manubot manusc
 ## Introduction
 
 Sections can be specified in separate Markdown files.
-Easy citation is one of attractive features of writing with Manubot [@1GGGHdsew].
-Some of our favorite papers are [@1E9EdQDCc; @P88nl7sq; @OgEAUK3F].
+Easy citation is one of attractive features of writing with Manubot [@url:https://greenelab.github.io/meta-review/].
+Some of our favorite papers are [@doi:10.1101/642926; @arxiv:1806.02473; @pmid:28725467].
 
-Let's see how a new reference looks [@b2hFuMuT].
+Let's see how a new reference looks [@doi:10.26434/chemrxiv.9159872.v1].
 Trigger a build to test the output branch.
 
 
@@ -111,9 +206,9 @@ Combined *italics and __bold__*
 - List item
 - List item
 
-superscript<sup>2</sup>
+subscript: H~2~O is a liquid
 
-subscript<sub>2n+1</sub>
+superscript: 2^10^ is 1024.
 
 [unicode superscripts](https://www.google.com/search?q=superscript+generator)⁰¹²³⁴⁵⁶⁷⁸⁹
 
@@ -124,7 +219,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 
 Putting each sentence on its own line has numerous benefits with regard to [editing](https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line) and [version control](https://rhodesmill.org/brandon/2012/one-sentence-per-line/).
 
@@ -161,6 +255,8 @@ Horizontal rule:
 
 Bare URL link: <https://manubot.org>
 
+[Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah](https://manubot.org)
+
 [Link with text](https://manubot.org)
 
 [Link with hover text](https://manubot.org "Manubot Homepage")
@@ -171,22 +267,26 @@ Bare URL link: <https://manubot.org>
 
 ## Citations
 
-Citation by DOI [@IhliSZDo].
+Citation by DOI [@doi:10.7554/eLife.32822].
 
-Citation by PubMed Central ID [@PyydLU5l].
+Citation by PubMed Central ID [@pmcid:PMC6103790].
 
-Citation by PubMed ID [@7XVI5bB4].
+Citation by PubMed ID [@pmid:30718888].
 
-Citation by Wikidata ID [@QhC8yJ7V].
+Citation by Wikidata ID [@wikidata:Q56458321].
 
-Citation by ISBN [@zBPP9YKu].
+Citation by ISBN [@isbn:9780262517638].
 
-Citation by URL [@1GGGHdsew].
+Citation by URL [@url:https://greenelab.github.io/meta-review/].
 
-Citation by tag [@PZMP42Ak].
+Citation by tag [@tag:deep-review].
 
-Multiple citations can be put inside the same set of brackets [@IhliSZDo; @PZMP42Ak; @zBPP9YKu].
-Manubot plugins provide easier, more convenient visualization of and navigation between citations [@YuJbg3zO; @7XVI5bB4; @PyydLU5l; @PZMP42Ak].
+Multiple citations can be put inside the same set of brackets [@doi:10.7554/eLife.32822; @tag:deep-review; @isbn:9780262517638].
+Manubot plugins provide easier, more convenient visualization of and navigation between citations [@doi:10.1371/journal.pcbi.1007128; @pmid:30718888; @pmcid:PMC6103790; @tag:deep-review].
+
+Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown's reference link syntax:
+
+[@tag:deep-review]: doi:10.1098/rsif.2017.0387
 
 ## Referencing figures, tables, equations
 
@@ -208,13 +308,11 @@ Equation @eq:long-equation
 
 > Quoted text
 
-
 > Quoted block of text
 >
 > Two roads diverged in a wood, and I—  
 > I took the one less traveled by,  
 > And that has made all the difference.
-
 
 Code `in the middle` of normal text, aka `inline code`.
 
@@ -271,13 +369,22 @@ White background specified to serve as a backdrop for transparent sections of th
 Table: A table with a top caption and specified relative column widths.
 {#tbl:bowling-scores}
 
-|         | Digits 1-33                        | Digits 34-66                      | Digits 67-99                      | Ref.                        |
-|:--------|:-----------------------------------|:----------------------------------|:----------------------------------|:----------------------------|
-| pi | 3.14159265358979323846264338327950 | 288419716939937510582097494459230 | 781640628620899862803482534211706 | [`piday.org`](https://www.piday.org/million/) |
-| e  | 2.71828182845904523536028747135266 | 249775724709369995957496696762772 | 407663035354759457138217852516642 | [`nasa.gov`](https://apod.nasa.gov/htmltest/gifcity/e.2mil) |
+|         | Digits 1-33                        | Digits 34-66                      | Digits 67-99                      | Ref.                                                        |
+|:--------|:-----------------------------------|:----------------------------------|:----------------------------------|:------------------------------------------------------------|
+| pi      | 3.14159265358979323846264338327950 | 288419716939937510582097494459230 | 781640628620899862803482534211706 | [`piday.org`](https://www.piday.org/million/)               |
+| e       | 2.71828182845904523536028747135266 | 249775724709369995957496696762772 | 407663035354759457138217852516642 | [`nasa.gov`](https://apod.nasa.gov/htmltest/gifcity/e.2mil) |
 
 Table: A table too wide to fit within page.
 {#tbl:constant-digits}
+
+|          | **Colors** <!-- $colspan="2" --> |                      |
+|:--------:|:--------------------------------:|:--------------------:|
+| **Size** | **Text Color**                   | **Background Color** |
+| big      | blue                             | orange               |
+| small    | black                            | white                |
+
+Table: A table with merged cells using the `attributes` plugin.
+{#tbl: merged-cells}
 
 ## Equations
 
@@ -295,6 +402,25 @@ $$x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s 
 _Journals are not likely to support them, and they may not display correctly when converted to other formats such as `.docx`._
 
 [Link styled as a button](https://manubot.org "Manubot Homepage"){.button}
+
+Adding arbitrary HTML attributes to an element using Pandoc's attribute syntax:
+
+::: {#some_id_1 .some_class style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true"}
+Manubot Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot.
+Manubot Manubot.
+Manubot.
+:::
+
+Adding arbitrary HTML attributes to an element with the Manubot `attributes` plugin (more flexible than Pandoc's method in terms of which elements you can add attributes to):
+
+Manubot Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot Manubot.
+Manubot Manubot Manubot.
+Manubot Manubot.
+Manubot.
+<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" -->
 
 Available background colors for text, images, code, banners, etc:  
 
