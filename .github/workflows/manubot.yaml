@@ -36,7 +36,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: "Test message from unsplash/comment-on-pr. "${{ env.ARTIFACT_MESSAGE }}
+          msg: "Test message from unsplash/comment-on-pr." ${{ env.ARTIFACT_MESSAGE }}
       - name: Set Environment Variables
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
