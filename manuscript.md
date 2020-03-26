@@ -78,11 +78,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/" />
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/" />
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -114,9 +114,9 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7/))
+([permalink](https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/))
 was automatically generated
-from [agitter/my-manuscript@ce6d7ea](https://github.com/agitter/my-manuscript/tree/ce6d7ea55ebca84e048fcec4130a5bdfc68d79b7)
+from [agitter/my-manuscript@e0019e8](https://github.com/agitter/my-manuscript/tree/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c)
 on March 26, 2020.
 </em></small>
 
