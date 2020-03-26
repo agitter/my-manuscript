@@ -20,6 +20,7 @@ jobs:
       - name: Create message
         run: |
           ARTIFACT_MESSAGE="Here is the message"
+          echo "::set-env name=ARTIFACT_MESSAGE::$ARTIFACT_MESSAGE"
       - name: Test comment github-script
         uses: actions/github-script@0.9.0
         with:
