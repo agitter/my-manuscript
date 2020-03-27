@@ -17,7 +17,7 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - name: Create message
+      - name: Create github-script message
         run: |
           ARTIFACT_MESSAGE="Test github-script message set in environment variable"
           echo "::set-env name=ARTIFACT_MESSAGE::$ARTIFACT_MESSAGE"
@@ -32,16 +32,6 @@ jobs:
               repo: context.repo.repo,
               body: '${{ env.ARTIFACT_MESSAGE }}'
             })
-      - name: Update message
-        run: |
-          ARTIFACT_MESSAGE="Test comment-on-pr message set in environment variable"
-          echo "::set-env name=ARTIFACT_MESSAGE::$ARTIFACT_MESSAGE"
-      - name: Test comment unsplash/comment-on-pr
-        uses: unsplash/comment-on-pr@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          msg: ${{ env.ARTIFACT_MESSAGE }}
       - name: Set Environment Variables
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
