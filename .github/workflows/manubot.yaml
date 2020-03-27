@@ -13,25 +13,6 @@ jobs:
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
     steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - name: Create github-script message
-        run: |
-          ARTIFACT_MESSAGE="Test github-script message set in environment variable"
-          echo "::set-env name=ARTIFACT_MESSAGE::$ARTIFACT_MESSAGE"
-      - name: Test comment github-script
-        uses: actions/github-script@0.9.0
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '${{ env.ARTIFACT_MESSAGE }}'
-            })
       - name: Set Environment Variables
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
@@ -65,6 +46,25 @@ jobs:
         with:
           name: manuscript-${{ github.run_id }}-${{ env.TRIGGERING_SHA_7 }}
           path: output
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Create Comment Message
+        run: |
+          ARTIFACT_MESSAGE="Test github-script message set in environment variable"
+          echo "::set-env name=ARTIFACT_MESSAGE::$ARTIFACT_MESSAGE"
+      - name: Comment on Pull Request
+        uses: actions/github-script@0.9.0
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '${{ env.ARTIFACT_MESSAGE }}'
+            })
       - name: Deploy Manuscript
         if: github.ref == 'refs/heads/master' && github.event_name == 'push' && !github.event.repository.fork
         env:
