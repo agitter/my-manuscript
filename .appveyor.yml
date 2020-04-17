@@ -29,6 +29,7 @@ install:
   - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
   - appveyor AddMessage "commit $TRIGGERING_COMMIT"
   - source ci/install.sh
+  - apt-get update && apt-get install -y aspell aspell-en
     
 test_script:
   - bash build/build.sh
