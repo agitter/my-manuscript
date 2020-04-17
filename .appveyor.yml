@@ -31,9 +31,7 @@ install:
   - appveyor AddMessage "commit $TRIGGERING_COMMIT"
   - sh: sudo apt-get update -y
   - sh: sudo apt-get install -y aspell aspell-en
-  - aspell dump dicts
   - wget https://raw.githubusercontent.com/pandoc/lua-filters/1c553017ecc58914c22bf2372902dca4a456929b/spellcheck/spellcheck.lua
-  # cat ~/.aspell.en.pws
   - source ci/install.sh
     
 test_script:
