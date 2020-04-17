@@ -55,7 +55,7 @@ on_success:
   - echo "Artifacts available from $APPVEYOR_URL/project/$APPVEYOR_ACCOUNT_NAME/$APPVEYOR_PROJECT_SLUG/builds/$APPVEYOR_BUILD_ID/artifacts"
   - echo "Updated PDF available from $APPVEYOR_URL/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME.pdf"
   - appveyor AddMessage "$JOB_MESSAGE is now complete."
-  - appveyor AddMessage " <details><summary>Found $SPELLING_ERROR_COUNT potential spelling error(s).</summary>- Text\n- Text\n- Text\n</details>"
+  - appveyor AddMessage " <details><summary>Found $SPELLING_ERROR_COUNT potential spelling error(s):</summary>$(cat $SPELLING_ERRORS_FILENAME)</details>"
 
 on_failure:
   - appveyor AddMessage "$JOB_MESSAGE failed."
