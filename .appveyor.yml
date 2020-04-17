@@ -28,7 +28,8 @@ install:
   # available if the build fails
   - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
   - appveyor AddMessage "commit $TRIGGERING_COMMIT"
-  - sh: sudo apt-get update && apt-get install -y aspell aspell-en
+  - sh: sudo apt-get update -y
+  - sh: sudo apt-get install -y aspell aspell-en
   - source ci/install.sh
     
 test_script:
