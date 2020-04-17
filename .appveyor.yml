@@ -69,5 +69,5 @@ notifications:
   - provider: GitHubPullRequest
     template: "AppVeyor [build {{buildVersion}}]({{buildUrl}})
       {{#jobs}}{{#messages}}{{{message}}}{{/messages}}{{/jobs}}
-      {{#passed}}The rendered manuscript from this build is temporarily available for download at:\n\n{{/passed}}
-      {{#jobs}}{{#artifacts}}- [`{{fileName}}`]({{permalink}})\n{{/artifacts}}{{/jobs}}"
+      {{#passed}}The rendered manuscript from this build is temporarily available for download at:\n\n
+      {{#jobs}}{{#artifacts}}- [`{{fileName}}`]({{permalink}})\n{{/artifacts}}{{/jobs}}{{/passed}}"
