@@ -44,6 +44,7 @@ test_script:
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.html
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.pdf
   - appveyor PushArtifact $SPELLING_ERRORS_FILENAME
+  - SPELLING_ERROR_COUNT=($(wc -l $SPELLING_ERRORS_FILENAME))
 
 build: off
 
@@ -63,6 +64,6 @@ notifications:
   - provider: GitHubPullRequest
     template: "AppVeyor [build {{buildVersion}}]({{buildUrl}})
       {{#jobs}}{{#messages}} for {{message}} by @{{&commitAuthorUsername}}{{/messages}}{{/jobs}}
-      {{#passed}} is now complete. The rendered manuscript from this build is temporarily available for download at:\n\n{{/passed}}
+      {{#passed}} is now complete. Found **$SPELLING_ERROR_COUNT** potential spelling error(s). The rendered manuscript from this build is temporarily available for download at:\n\n{{/passed}}
       {{#failed}} failed.{{/failed}}
       {{#jobs}}{{#artifacts}}- [`{{fileName}}`]({{permalink}})\n{{/artifacts}}{{/jobs}}"
