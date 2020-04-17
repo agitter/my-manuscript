@@ -83,7 +83,7 @@ if [ "${BUILD_DOCX:-}" = "true" ]; then
 fi
 
 # Spellcheck
-export ASPELL_CONF="ignore 5"
+export ASPELL_CONF="ignore 5 ignore-case"
 pandoc --lua-filter spellcheck.lua output/manuscript.md > spelling-errors.txt
 cat spelling-errors.txt
 
