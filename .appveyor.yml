@@ -31,17 +31,19 @@ install:
   - appveyor AddMessage "commit $TRIGGERING_COMMIT"
   - sh: sudo apt-get update -y
   - sh: sudo apt-get install -y aspell aspell-en
-  - aspell dump config
   - wget https://raw.githubusercontent.com/pandoc/lua-filters/1c553017ecc58914c22bf2372902dca4a456929b/spellcheck/spellcheck.lua
   - source ci/install.sh
     
 test_script:
   - bash build/build.sh
   - MANUSCRIPT_FILENAME=manuscript-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}
+  - SPELLING_ERRORS_FILENAME=spelling-errors-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.txt
   - cp output/manuscript.html $MANUSCRIPT_FILENAME.html
   - cp output/manuscript.pdf $MANUSCRIPT_FILENAME.pdf
+  - cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.html
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.pdf
+  - appveyor PushArtifact $SPELLING_ERRORS_FILENAME
 
 build: off
 
