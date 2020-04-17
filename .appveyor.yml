@@ -26,6 +26,7 @@ services:
 install:
   # Create the message with the triggering commit before install so it is
   # available if the build fails
+  - exit 1
   - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
   - JOB_MESSAGE=" for commit $TRIGGERING_COMMIT "
   # Install aspell and pandoc spellcheck filter outside of install script
