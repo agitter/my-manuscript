@@ -83,9 +83,11 @@ if [ "${BUILD_DOCX:-}" = "true" ]; then
 fi
 
 # Spellcheck
-# export ASPELL_CONF="ignore 5; ignore-case true; add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt"
-export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt"
-pandoc --lua-filter spellcheck.lua output/manuscript.md | sort | uniq > output/spelling-errors.txt
-cat output/spelling-errors.txt
+if [ "${SPELLCHECK:-}" = "true" ]; then
+  # export ASPELL_CONF="ignore 5; ignore-case true; add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt"
+  export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt"
+  pandoc --lua-filter spellcheck.lua output/manuscript.md | sort | uniq > output/spelling-errors.txt
+  cat output/spelling-errors.txt
+fi
 
 echo >&2 "Build complete"
