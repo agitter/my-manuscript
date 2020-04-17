@@ -83,6 +83,7 @@ if [ "${BUILD_DOCX:-}" = "true" ]; then
 fi
 
 # Spellcheck
+ASPELL_CONF="ignore=5"
 pandoc --lua-filter spellcheck.lua output/manuscript.md > spelling-errors.txt
 cat spelling-errors.txt
 
