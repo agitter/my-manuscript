@@ -26,9 +26,9 @@ services:
 install:
   # Create the message with the triggering commit before install so it is
   # available if the build fails
-  - exit 1
   - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
   - JOB_MESSAGE=" for commit $TRIGGERING_COMMIT "
+  - source does_not_exist.sh
   # Install aspell and pandoc spellcheck filter outside of install script
   - sh: sudo apt-get update -y
   - sh: sudo apt-get install -y aspell aspell-en
