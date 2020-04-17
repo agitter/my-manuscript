@@ -23,8 +23,8 @@ image: ubuntu
 services:
   - docker
   
-environment:
-  SPELLCHECK: true
+#environment:
+#  SPELLCHECK: true
 
 install:
   # Create the message with the triggering commit before install so it is
