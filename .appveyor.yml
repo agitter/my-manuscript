@@ -31,7 +31,6 @@ install:
   # available if the build fails
   - TRIGGERING_COMMIT=${APPVEYOR_PULL_REQUEST_HEAD_COMMIT:-APPVEYOR_REPO_COMMIT}
   - JOB_MESSAGE=" for commit $TRIGGERING_COMMIT "
-  - source missing.sh
   - source ci/install.sh
     
 test_script:
@@ -40,9 +39,10 @@ test_script:
   - SPELLING_ERRORS_FILENAME=spelling-errors-$APPVEYOR_BUILD_VERSION-${TRIGGERING_COMMIT:0:7}.txt
   - cp output/manuscript.html $MANUSCRIPT_FILENAME.html
   - cp output/manuscript.pdf $MANUSCRIPT_FILENAME.pdf
-  - cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.html
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.pdf
+  ### Make conditional
+  - cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME
   - appveyor PushArtifact $SPELLING_ERRORS_FILENAME
 
 build: off
@@ -54,9 +54,10 @@ on_success:
   - echo "Artifacts available from $APPVEYOR_URL/project/$APPVEYOR_ACCOUNT_NAME/$APPVEYOR_PROJECT_SLUG/builds/$APPVEYOR_BUILD_ID/artifacts"
   - echo "Updated PDF available from $APPVEYOR_URL/api/buildjobs/$APPVEYOR_JOB_ID/artifacts/$MANUSCRIPT_FILENAME.pdf"
   - appveyor AddMessage "$JOB_MESSAGE is now complete."
-  - SPELLING_ERROR_COUNT=($(wc -l $SPELLING_ERRORS_FILENAME))
-  - appveyor AddMessage " <details><summary>Found $SPELLING_ERROR_COUNT potential spelling error(s). Preview:</summary>$(cat $SPELLING_ERRORS_FILENAME)"
-  - appveyor AddMessage "... </details>"
+  ### Make conditional
+  - if [ "${SPELLCHECK:-}" = "true" ]; then SPELLING_ERROR_COUNT=($(wc -l $SPELLING_ERRORS_FILENAME)); fi
+  - if [ "${SPELLCHECK:-}" = "true" ]; then appveyor AddMessage " <details><summary>Found $SPELLING_ERROR_COUNT potential spelling error(s). Preview:</summary>$(cat $SPELLING_ERRORS_FILENAME)"; fi
+  - if [ "${SPELLCHECK:-}" = "true" ]; then appveyor AddMessage "... </details>"; fi
 
 on_failure:
   - appveyor AddMessage "$JOB_MESSAGE failed."
