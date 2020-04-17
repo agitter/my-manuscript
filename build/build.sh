@@ -82,4 +82,8 @@ if [ "${BUILD_DOCX:-}" = "true" ]; then
     --defaults="$PANDOC_DEFAULTS_DIR/docx.yaml"
 fi
 
+# Spellcheck
+pandoc --lua-filter spellcheck.lua output/manuscript.md > spelling-errors.txt
+cat spelling-errors.txt
+
 echo >&2 "Build complete"

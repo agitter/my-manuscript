@@ -7,7 +7,6 @@ filters:
 - pandoc-tablenos
 - pandoc-manubot-cite
 - pandoc-citeproc
-- spellcheck.lua
 wrap: preserve
 metadata:
   csl: build/assets/style.csl
