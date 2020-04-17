@@ -42,8 +42,11 @@ test_script:
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.html
   - appveyor PushArtifact $MANUSCRIPT_FILENAME.pdf
   ### Make conditional
-  - if [ "${SPELLCHECK:-}" = "true" ]; then cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME; fi
-  - if [ "${SPELLCHECK:-}" = "true" ]; then appveyor PushArtifact $SPELLING_ERRORS_FILENAME; fi
+  - |
+      if [ "${SPELLCHECK:-}" = "true" ]; then
+        cp output/spelling-errors.txt $SPELLING_ERRORS_FILENAME;
+        appveyor PushArtifact $SPELLING_ERRORS_FILENAME
+      fi
 
 build: off
 
