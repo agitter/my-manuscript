@@ -14,11 +14,11 @@ jobs:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
     steps:
       - name: Install Spellcheck
+        if: "${SPELLCHECK:-}" = "true"
         run: |
           sudo apt-get update -y
           sudo apt-get install -y aspell aspell-en
           wget https://raw.githubusercontent.com/pandoc/lua-filters/1c553017ecc58914c22bf2372902dca4a456929b/spellcheck/spellcheck.lua
-        if: "${SPELLCHECK:-}" = "true"
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
