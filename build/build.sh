@@ -2,9 +2,9 @@
 
 ## build.sh: compile manuscript outputs from content using Manubot and Pandoc
 
-#set -o errexit \
-#    -o nounset \
-#    -o pipefail
+set -o errexit \
+    -o nounset \
+    -o pipefail
 
 # Set timezone used by Python for setting the manuscript's date
 export TZ=Etc/UTC
