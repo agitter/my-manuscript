@@ -2,9 +2,9 @@
 
 ## build.sh: compile manuscript outputs from content using Manubot and Pandoc
 
-set -o errexit \
-    -o nounset \
-    -o pipefail
+#set -o errexit \
+#    -o nounset \
+#    -o pipefail
 
 # Set timezone used by Python for setting the manuscript's date
 export TZ=Etc/UTC
@@ -84,11 +84,9 @@ fi
 
 # Spellcheck
 if [ "${SPELLCHECK:-}" = "true" ]; then
-  pwd
-  ls
   # export ASPELL_CONF="ignore 5; ignore-case true; add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt"
-  export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt"
-  pandoc --lua-filter spellcheck.lua output/manuscript.md | uniq | while read word; do grep -on "\<$word\>" output/manuscript.md; done | sort -h > output/spelling-errors.txt
+  export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt; ignore-case true"
+  pandoc --lua-filter spellcheck.lua output/manuscript.md | uniq | while read word; do grep -ion "\<$word\>" content/*md; done | sort -h -t ":" -k 1b,1 -k2,2 > output/spelling-errors.txt
   cat output/spelling-errors.txt
 fi
 
