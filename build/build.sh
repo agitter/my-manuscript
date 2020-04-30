@@ -85,7 +85,7 @@ fi
 # Spellcheck
 if [ "${SPELLCHECK:-}" = "true" ]; then
   export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt; ignore-case true"
-  cat content/02.main-body.md | aspell list
+  for file in content/*.md; do echo $file; cat $file | aspell list; done
 
   # Identify and store spelling errors
   pandoc --lua-filter spellcheck.lua output/manuscript.md | sort -fu > output/spelling-errors.txt
