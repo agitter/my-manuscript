@@ -86,7 +86,7 @@ fi
 if [ "${SPELLCHECK:-}" = "true" ]; then
   export ASPELL_CONF="add-extra-dicts $(pwd)/build/assets/custom-dictionary.txt; ignore-case true"
   echo content/test.md aspell:
-  cat content/test.md aspell | aspell list
+  cat content/test.md | aspell list
 
   echo content/test.md pandoc spellcheck:
   pandoc --lua-filter spellcheck.lua content/test.md
