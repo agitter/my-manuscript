@@ -6,5 +6,5 @@ re-test
 re-xzy
 What about (RE) in parenthesis?
 Or simply RE on its own?
-Bérengère
-naïve
+BÃ©rengÃ¨re
+naÃ¯ve
