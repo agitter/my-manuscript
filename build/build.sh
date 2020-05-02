@@ -107,7 +107,6 @@ if [ "${SPELLCHECK:-}" = "true" ]; then
   # contains only the original misspelled words
   cp output/spelling-errors.txt output/expanded-spelling-errors.txt
   grep "’" output/spelling-errors.txt | sed "s/’/'/g" >> output/expanded-spelling-errors.txt
-  cat output/expanded-spelling-errors.txt
 
   # Find locations of spelling errors
   # Use "|| true" after grep because otherwise this step of the pipeline will
