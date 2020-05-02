@@ -106,7 +106,7 @@ if [ "${SPELLCHECK:-}" = "true" ]; then
   # Create a new expanded spelling errors file so that the saved artifact
   # contains only the original misspelled words
   cp output/spelling-errors.txt output/expanded-spelling-errors.txt
-  grep "’" output/spelling-errors.txt | sed "s/’/'/g" >> output/expanded-spelling-errors.txt
+  grep "’" output/spelling-errors.txt | sed "s/’/'/g" >> output/expanded-spelling-errors.txt || true
 
   # Find locations of spelling errors
   # Use "|| true" after grep because otherwise this step of the pipeline will
@@ -115,6 +115,8 @@ if [ "${SPELLCHECK:-}" = "true" ]; then
   cat output/expanded-spelling-errors.txt | while read word; do grep -ion "\<$word\>" content/*.md; done | sort -h -t ":" -k 1b,1 -k2,2 > output/spelling-error-locations.txt || true
   echo >&2 "Filenames and line numbers with potential spelling errors:"
   cat output/spelling-error-locations.txt
+
+  rm output/expanded-spelling-errors.txt
 fi
 
 echo >&2 "Build complete"
