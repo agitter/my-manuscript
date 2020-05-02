@@ -13,6 +13,7 @@ jobs:
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
       SPELLCHECK: true
+    steps:
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
@@ -62,15 +63,11 @@ jobs:
           environment-file: build/environment.yml
           auto-activate-base: false
           miniconda-version: 'latest'
-    steps:
       - name: Install Spellcheck
+        shell: bash --login {0}
         run: |
           if [ "${SPELLCHECK:-}" = "true" ]; then
-            sudo apt-get update -y
-            sudo apt-get install -y aspell aspell-en
-            wget https://raw.githubusercontent.com/pandoc/lua-filters/1c553017ecc58914c22bf2372902dca4a456929b/spellcheck/spellcheck.lua
-            pwd
-            ls
+            bash ci/install-spellcheck.sh
           fi
       - name: Build Manuscript
         shell: bash --login {0}
