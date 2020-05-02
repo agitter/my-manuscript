@@ -105,7 +105,7 @@ if [ "${SPELLCHECK:-}" = "true" ]; then
   # locations can be detected
   # Create a new expanded spelling errors file so that the saved artifact
   # contains only the original misspelled words
-  grep "’" output/spelling-errors.txt
+  grep "Pan" output/spelling-errors.txt
   echo Finished grep call
   grep "’" output/spelling-errors.txt | sed "s/’/'/g" > output/expanded-spelling-errors.txt
   cat output/expanded-spelling-errors.txt
