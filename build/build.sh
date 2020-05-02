@@ -107,7 +107,7 @@ if [ "${SPELLCHECK:-}" = "true" ]; then
   # contains only the original misspelled words
   grep "Pan" output/spelling-errors.txt
   echo Finished grep call
-  grep "’" output/spelling-errors.txt | sed "s/’/'/g" > output/expanded-spelling-errors.txt
+  grep "â€™" output/spelling-errors.txt | sed "s/â€™/'/g" > output/expanded-spelling-errors.txt
   cat output/expanded-spelling-errors.txt
 
   # Find locations of spelling errors
