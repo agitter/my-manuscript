@@ -31,8 +31,9 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-refs/heads/master
-      - name: Test Haskell
+      - name: Setup Haskell
         uses: actions/setup-haskell@v1.1
+      - name: Test Haskell
         run: |
           cabal update
           cabal install pandoc-placetable
