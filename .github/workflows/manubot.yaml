@@ -32,6 +32,7 @@ jobs:
           restore-keys: |
             ci-cache-refs/heads/master
       - name: Test Haskell
+        uses: actions/setup-haskell@v1.1
         run: |
           cabal update
           cabal install pandoc-placetable
