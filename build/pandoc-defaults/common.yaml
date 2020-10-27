@@ -12,3 +12,6 @@ wrap: preserve
 metadata:
   csl: build/assets/style.csl
   link-citations: true
+number-sections: true
+# offset Manubot's use of level-1 headings for the title only
+shift-heading-level-by: -1
