@@ -5,7 +5,7 @@ author-meta:
 - Anthony Gitter
 bibliography:
 - content/manual-references.json
-date-meta: '2020-03-26'
+date-meta: '2020-11-25'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -24,9 +24,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Demonstrating Manubot-based Writing" />
 
-  <meta name="dc.date" content="2020-03-26" />
+  <meta name="dc.date" content="2020-11-25" />
 
-  <meta name="citation_publication_date" content="2020-03-26" />
+  <meta name="citation_publication_date" content="2020-11-25" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -78,11 +78,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/" />
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/a5fbb2caf8583055b7e5b8ae518c5f78907dd164/" />
 
-  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/" />
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/a5fbb2caf8583055b7e5b8ae518c5f78907dd164/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/a5fbb2caf8583055b7e5b8ae518c5f78907dd164/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -114,10 +114,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c/))
+([permalink](https://agitter.github.io/my-manuscript/v/a5fbb2caf8583055b7e5b8ae518c5f78907dd164/))
 was automatically generated
-from [agitter/my-manuscript@e0019e8](https://github.com/agitter/my-manuscript/tree/e0019e8fd9a212ad08d4b5bd4bc08bbb0c323c6c)
-on March 26, 2020.
+from [agitter/my-manuscript@a5fbb2c](https://github.com/agitter/my-manuscript/tree/a5fbb2caf8583055b7e5b8ae518c5f78907dd164)
+on November 25, 2020.
 </em></small>
 
 ## Authors
@@ -237,6 +237,10 @@ Document section headings:
 
 #### Heading 4
 
+##### Heading 5
+
+###### Heading 6
+
 ### A heading centered on its own printed page{.center .page_center}
 
 <!-- an arbitrary comment. visible in input, but not visible in output. -->
@@ -269,24 +273,24 @@ Bare URL link: <https://manubot.org>
 
 Citation by DOI [@doi:10.7554/eLife.32822].
 
-Citation by PubMed Central ID [@pmcid:PMC6103790].
+Citation by PubMed Central ID [@pmc:PMC6103790].
 
-Citation by PubMed ID [@pmid:30718888].
+Citation by PubMed ID [@pubmed:30718888].
 
 Citation by Wikidata ID [@wikidata:Q56458321].
 
 Citation by ISBN [@isbn:9780262517638].
 
-Citation by URL [@url:https://greenelab.github.io/meta-review/].
+Citation by URL [@https://greenelab.github.io/meta-review/].
 
-Citation by tag [@tag:deep-review].
+Citation by alias [@deep-review].
 
-Multiple citations can be put inside the same set of brackets [@doi:10.7554/eLife.32822; @tag:deep-review; @isbn:9780262517638].
-Manubot plugins provide easier, more convenient visualization of and navigation between citations [@doi:10.1371/journal.pcbi.1007128; @pmid:30718888; @pmcid:PMC6103790; @tag:deep-review].
+Multiple citations can be put inside the same set of brackets [@doi:10.7554/eLife.32822; @deep-review; @isbn:9780262517638].
+Manubot plugins provide easier, more convenient visualization of and navigation between citations [@doi:10.1371/journal.pcbi.1007128; @pubmed:30718888; @pmc:PMC6103790; @deep-review].
 
 Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown's reference link syntax:
 
-[@tag:deep-review]: doi:10.1098/rsif.2017.0387
+[@deep-review]: doi:10.1098/rsif.2017.0387
 
 ## Referencing figures, tables, equations
 
