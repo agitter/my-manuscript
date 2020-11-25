@@ -7,7 +7,7 @@ branches:
   only:
     - master
 env:
-  - SPELLCHECK=true
+  - SPELLCHECK=false
 install:
   - source ci/install.sh
 script:
