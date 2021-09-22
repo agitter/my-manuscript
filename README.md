@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/agitter/my-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://agitter.github.io/my-manuscript/>.
-The permalink for this webpage version is <https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/>.
+The permalink for this webpage version is <https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://agitter.github.io/my-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`44f46f1b3df25d1076df08a182cecc2dfc72be4e`](https://github.com/agitter/my-manuscript/commit/44f46f1b3df25d1076df08a182cecc2dfc72be4e).
+[`452ddcebf15b183dd3dec9cb5f89af027cc4daa3`](https://github.com/agitter/my-manuscript/commit/452ddcebf15b183dd3dec9cb5f89af027cc4daa3).
