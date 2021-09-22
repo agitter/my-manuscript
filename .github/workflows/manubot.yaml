@@ -2,9 +2,11 @@ name: Manubot
 on:
   push:
     branches:
+      - main
       - master
   pull_request:
     branches:
+      - main
       - master
 jobs:
   manubot:
@@ -14,47 +16,27 @@ jobs:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
       SPELLCHECK: false
     steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - name: Dump job context
-        env:
-          JOB_CONTEXT: ${{ toJson(job) }}
-        run: echo "$JOB_CONTEXT"
-      - name: Dump steps context
-        env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$STEPS_CONTEXT"
-      - name: Dump runner context
-        env:
-          RUNNER_CONTEXT: ${{ toJson(runner) }}
-        run: echo "$RUNNER_CONTEXT"
-      - name: Dump strategy context
-        env:
-          STRATEGY_CONTEXT: ${{ toJson(strategy) }}
-        run: echo "$STRATEGY_CONTEXT"
-      - name: Dump matrix context
-        env:
-          MATRIX_CONTEXT: ${{ toJson(matrix) }}
-        run: echo "$MATRIX_CONTEXT"  
-      - name: Set Environment Variables
-        run: |
-          TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
-          echo "TRIGGERING_SHA_7=${TRIGGERING_SHA::7}" >> $GITHUB_ENV
-          echo "TRIGGERING_SHA: $TRIGGERING_SHA"
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
           # fetch entire commit history to support get_rootstock_commit
           fetch-depth: 0
+      - name: Set Environment Variables
+        run: |
+          TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
+          echo "TRIGGERING_SHA_7=${TRIGGERING_SHA::7}" >> $GITHUB_ENV
+          echo "TRIGGERING_SHA: $TRIGGERING_SHA"
+          DEFAULT_BRANCH=$(git remote show origin | grep --perl-regexp --only-matching "(?<=HEAD branch: ).+")
+          echo "DEFAULT_BRANCH=${DEFAULT_BRANCH}" >> $GITHUB_ENV
+          echo "DEFAULT_BRANCH_REF=refs/heads/$DEFAULT_BRANCH" >> $GITHUB_ENV
+          echo "DEFAULT_BRANCH=$DEFAULT_BRANCH"
       - name: Cache
         uses: actions/cache@v1
         with:
           path: ci/cache
           key: ci-cache-${{ github.ref }}
           restore-keys: |
-            ci-cache-refs/heads/master
+            ci-cache-${{ env.DEFAULT_BRANCH_REF }}
       - name: Install Environment
         uses: conda-incubator/setup-miniconda@v2
         with:
@@ -77,7 +59,7 @@ jobs:
           name: manuscript-${{ github.run_id }}-${{ env.TRIGGERING_SHA_7 }}
           path: output
       - name: Deploy Manuscript
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push' && !github.event.repository.fork
+        if: github.ref == env.DEFAULT_BRANCH_REF && github.event_name == 'push' && !github.event.repository.fork
         env:
           MANUBOT_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MANUBOT_SSH_PRIVATE_KEY: ${{ secrets.MANUBOT_SSH_PRIVATE_KEY }}
