@@ -1,110 +1,67 @@
 ---
-author-meta:
-- John Doe
-- Jane Roe
-- Anthony Gitter
-bibliography:
-- content/manual-references.json
-date-meta: '2020-11-25'
-header-includes: '<!--
-
-  Manubot generated metadata rendered from header-includes-template.html.
-
-  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
-
-  -->
-
-  <meta name="dc.format" content="text/html" />
-
-  <meta name="dc.title" content="Demonstrating Manubot-based Writing" />
-
-  <meta name="citation_title" content="Demonstrating Manubot-based Writing" />
-
-  <meta property="og:title" content="Demonstrating Manubot-based Writing" />
-
-  <meta property="twitter:title" content="Demonstrating Manubot-based Writing" />
-
-  <meta name="dc.date" content="2020-11-25" />
-
-  <meta name="citation_publication_date" content="2020-11-25" />
-
-  <meta name="dc.language" content="en-US" />
-
-  <meta name="citation_language" content="en-US" />
-
-  <meta name="dc.relation.ispartof" content="Manubot" />
-
-  <meta name="dc.publisher" content="Manubot" />
-
-  <meta name="citation_journal_title" content="Manubot" />
-
-  <meta name="citation_technical_report_institution" content="Manubot" />
-
-  <meta name="citation_author" content="John Doe" />
-
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-
-  <meta name="twitter:creator" content="@johndoe" />
-
-  <meta name="citation_author" content="Jane Roe" />
-
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-
-  <meta name="citation_author" content="Anthony Gitter" />
-
-  <meta name="citation_author_institution" content="Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America" />
-
-  <meta name="citation_author_institution" content="Morgridge Institute for Research, Madison, Wisconsin, United States of America" />
-
-  <meta name="citation_author_orcid" content="0000-0002-5324-9833" />
-
-  <meta name="twitter:creator" content="@anthonygitter" />
-
-  <link rel="canonical" href="https://agitter.github.io/my-manuscript/" />
-
-  <meta property="og:url" content="https://agitter.github.io/my-manuscript/" />
-
-  <meta property="twitter:url" content="https://agitter.github.io/my-manuscript/" />
-
-  <meta name="citation_fulltext_html_url" content="https://agitter.github.io/my-manuscript/" />
-
-  <meta name="citation_pdf_url" content="https://agitter.github.io/my-manuscript/manuscript.pdf" />
-
-  <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
-
-  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/c7d8a1e375aa2ee5038780a21fd6047fd8d660b4/" />
-
-  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/c7d8a1e375aa2ee5038780a21fd6047fd8d660b4/" />
-
-  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/c7d8a1e375aa2ee5038780a21fd6047fd8d660b4/manuscript.pdf" />
-
-  <meta property="og:type" content="article" />
-
-  <meta property="twitter:card" content="summary_large_image" />
-
-  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
-
-  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
-
-  <meta name="theme-color" content="#ad1457" />
-
-  <!-- end Manubot generated metadata -->'
+title: Demonstrating Manubot-based Writing
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
-manubot-clear-requests-cache: false
+date-meta: '2021-09-22'
+author-meta:
+- John Doe
+- Jane Roe
+- Anthony Gitter
+header-includes: |-
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta name="dc.title" content="Demonstrating Manubot-based Writing" />
+  <meta name="citation_title" content="Demonstrating Manubot-based Writing" />
+  <meta property="og:title" content="Demonstrating Manubot-based Writing" />
+  <meta property="twitter:title" content="Demonstrating Manubot-based Writing" />
+  <meta name="dc.date" content="2021-09-22" />
+  <meta name="citation_publication_date" content="2021-09-22" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Anthony Gitter" />
+  <meta name="citation_author_institution" content="Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America" />
+  <meta name="citation_author_institution" content="Morgridge Institute for Research, Madison, Wisconsin, United States of America" />
+  <meta name="citation_author_orcid" content="0000-0002-5324-9833" />
+  <meta name="twitter:creator" content="@anthonygitter" />
+  <link rel="canonical" href="https://agitter.github.io/my-manuscript/" />
+  <meta property="og:url" content="https://agitter.github.io/my-manuscript/" />
+  <meta property="twitter:url" content="https://agitter.github.io/my-manuscript/" />
+  <meta name="citation_fulltext_html_url" content="https://agitter.github.io/my-manuscript/" />
+  <meta name="citation_pdf_url" content="https://agitter.github.io/my-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/" />
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+bibliography:
+- content/manual-references.json
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Demonstrating Manubot-based Writing
+manubot-clear-requests-cache: false
 ...
 
 
@@ -114,10 +71,10 @@ title: Demonstrating Manubot-based Writing
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/c7d8a1e375aa2ee5038780a21fd6047fd8d660b4/))
+([permalink](https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/))
 was automatically generated
-from [agitter/my-manuscript@c7d8a1e](https://github.com/agitter/my-manuscript/tree/c7d8a1e375aa2ee5038780a21fd6047fd8d660b4)
-on November 25, 2020.
+from [agitter/my-manuscript@44f46f1](https://github.com/agitter/my-manuscript/tree/44f46f1b3df25d1076df08a182cecc2dfc72be4e)
+on September 22, 2021.
 </em></small>
 
 ## Authors
@@ -360,7 +317,7 @@ Loaded from a specific (hashed) version of the image on GitHub.
 **A vector `.svg` image loaded from GitHub.**
 The parameter `sanitize=true` is necessary to properly load SVGs hosted via GitHub URLs.
 White background specified to serve as a backdrop for transparent sections of the image.
-](https://raw.githubusercontent.com/manubot/resources/master/test/vector.svg?sanitize=true "Vector image"){#fig:vector-image height=2.5in .white}
+](https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true "Vector image"){#fig:vector-image height=2.5in .white}
 
 ## Tables
 
