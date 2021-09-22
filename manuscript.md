@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://agitter.github.io/my-manuscript/" />
   <meta name="citation_pdf_url" content="https://agitter.github.io/my-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/" />
-  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/" />
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/44f46f1b3df25d1076df08a182cecc2dfc72be4e/))
+([permalink](https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/))
 was automatically generated
-from [agitter/my-manuscript@44f46f1](https://github.com/agitter/my-manuscript/tree/44f46f1b3df25d1076df08a182cecc2dfc72be4e)
+from [agitter/my-manuscript@452ddce](https://github.com/agitter/my-manuscript/tree/452ddcebf15b183dd3dec9cb5f89af027cc4daa3)
 on September 22, 2021.
 </em></small>
 
@@ -238,7 +238,7 @@ Citation by Wikidata ID [@wikidata:Q56458321].
 
 Citation by ISBN [@isbn:9780262517638].
 
-Citation by URL [@https://greenelab.github.io/meta-review/].
+Citation by URL [@{https://greenelab.github.io/meta-review/}].
 
 Citation by alias [@deep-review].
 
