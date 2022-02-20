@@ -5,7 +5,6 @@
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://agitter.github.io/my-manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://agitter.github.io/my-manuscript/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/manubot/rootstock/workflows/Manubot/badge.svg)](https://github.com/agitter/my-manuscript/actions)
-<!-- usage note: delete CI badges above for services not used by your manuscript -->
 
 ## Manuscript description
 
@@ -84,7 +83,7 @@ The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the
 + **HTML manuscript** at https://agitter.github.io/my-manuscript/
 + **PDF manuscript** at https://agitter.github.io/my-manuscript/manuscript.pdf
 
-For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
+For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml).
 
 ## License
 
