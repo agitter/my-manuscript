@@ -7,13 +7,13 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2021-09-22",
+    "date-meta": "2022-02-20",
     "author-meta": [
       "John Doe",
       "Jane Roe",
       "Anthony Gitter"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta name=\"citation_title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta property=\"og:title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta property=\"twitter:title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta name=\"dc.date\" content=\"2021-09-22\" />\n<meta name=\"citation_publication_date\" content=\"2021-09-22\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, Wisconsin, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"twitter:creator\" content=\"@anthonygitter\" />\n<link rel=\"canonical\" href=\"https://agitter.github.io/my-manuscript/\" />\n<meta property=\"og:url\" content=\"https://agitter.github.io/my-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://agitter.github.io/my-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://agitter.github.io/my-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://agitter.github.io/my-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://agitter.github.io/my-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta name=\"citation_title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta property=\"og:title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta property=\"twitter:title\" content=\"Demonstrating Manubot-based Writing\" />\n<meta name=\"dc.date\" content=\"2022-02-20\" />\n<meta name=\"citation_publication_date\" content=\"2022-02-20\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"citation_author\" content=\"Anthony Gitter\" />\n<meta name=\"citation_author_institution\" content=\"Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America\" />\n<meta name=\"citation_author_institution\" content=\"Morgridge Institute for Research, Madison, Wisconsin, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5324-9833\" />\n<meta name=\"twitter:creator\" content=\"@anthonygitter\" />\n<link rel=\"canonical\" href=\"https://agitter.github.io/my-manuscript/\" />\n<meta property=\"og:url\" content=\"https://agitter.github.io/my-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://agitter.github.io/my-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://agitter.github.io/my-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://agitter.github.io/my-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://agitter.github.io/my-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -23,7 +23,8 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "September 22, 2021",
+    "date": "February 20, 2022",
+    "randomize_author_order": false,
     "authors": [
       {
         "github": "johndoe",
@@ -98,19 +99,19 @@
       "repo_slug": "agitter/my-manuscript",
       "repo_owner": "agitter",
       "repo_name": "my-manuscript",
-      "commit": "452ddcebf15b183dd3dec9cb5f89af027cc4daa3",
-      "triggering_commit": "452ddcebf15b183dd3dec9cb5f89af027cc4daa3",
-      "build_url": "https://github.com/agitter/my-manuscript/commit/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/checks",
-      "job_url": "https://github.com/agitter/my-manuscript/actions/runs/1263634845"
+      "commit": "5a986d4395696fde2e80bf849b28306bb1fa7ab4",
+      "triggering_commit": "5a986d4395696fde2e80bf849b28306bb1fa7ab4",
+      "build_url": "https://github.com/agitter/my-manuscript/commit/5a986d4395696fde2e80bf849b28306bb1fa7ab4/checks",
+      "job_url": "https://github.com/agitter/my-manuscript/actions/runs/1872728272"
     },
     "html_url": "https://agitter.github.io/my-manuscript/",
     "pdf_url": "https://agitter.github.io/my-manuscript/manuscript.pdf",
-    "html_url_versioned": "https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/",
-    "pdf_url_versioned": "https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/manuscript.pdf",
-    "manubot_version": "0.5.1",
-    "rootstock_commit": "690aac113b4ee7dbb32a0af10a3d36c51a207025",
+    "html_url_versioned": "https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/",
+    "pdf_url_versioned": "https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/manuscript.pdf",
+    "manubot_version": "0.5.2",
+    "rootstock_commit": "9a22fab4497f80f501ea361d028f26888ad9d5a0",
     "manuscript_stats": {
-      "word_count": 1461
+      "word_count": 1467
     }
   }
 }

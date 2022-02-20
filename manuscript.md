@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-09-22'
+date-meta: '2022-02-20'
 author-meta:
 - John Doe
 - Jane Roe
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Demonstrating Manubot-based Writing" />
   <meta property="og:title" content="Demonstrating Manubot-based Writing" />
   <meta property="twitter:title" content="Demonstrating Manubot-based Writing" />
-  <meta name="dc.date" content="2021-09-22" />
-  <meta name="citation_publication_date" content="2021-09-22" />
+  <meta name="dc.date" content="2022-02-20" />
+  <meta name="citation_publication_date" content="2022-02-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://agitter.github.io/my-manuscript/" />
   <meta name="citation_pdf_url" content="https://agitter.github.io/my-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/" />
-  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/" />
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/452ddcebf15b183dd3dec9cb5f89af027cc4daa3/))
+([permalink](https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/))
 was automatically generated
-from [agitter/my-manuscript@452ddce](https://github.com/agitter/my-manuscript/tree/452ddcebf15b183dd3dec9cb5f89af027cc4daa3)
-on September 22, 2021.
+from [agitter/my-manuscript@5a986d4](https://github.com/agitter/my-manuscript/tree/5a986d4395696fde2e80bf849b28306bb1fa7ab4)
+on February 20, 2022.
 </em></small>
 
 ## Authors
@@ -82,11 +82,11 @@ on September 22, 2021.
 
 
 + **John Doe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [johndoe](https://github.com/johndoe)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
      Department of Something, University of Whatever
@@ -94,20 +94,20 @@ on September 22, 2021.
   </small>
 
 + **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [janeroe](https://github.com/janeroe)<br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
 
 + **Anthony Gitter**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-5324-9833](https://orcid.org/0000-0002-5324-9833)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [agitter](https://github.com/agitter)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [anthonygitter](https://twitter.com/anthonygitter)<br>
   <small>
      Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, Wisconsin, United States of America; Morgridge Institute for Research, Madison, Wisconsin, United States of America
