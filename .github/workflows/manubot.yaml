@@ -83,6 +83,8 @@ jobs:
           miniforge-version: 'latest'
       - name: Dump conda environment
         run: conda list
+      - name: Command line cite
+        run: manubot cite 10.1016/j.trechm.2020.11.004 --txt
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
