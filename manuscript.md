@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-02-20'
+date-meta: '2022-03-18'
 author-meta:
 - John Doe
 - Jane Roe
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Demonstrating Manubot-based Writing" />
   <meta property="og:title" content="Demonstrating Manubot-based Writing" />
   <meta property="twitter:title" content="Demonstrating Manubot-based Writing" />
-  <meta name="dc.date" content="2022-02-20" />
-  <meta name="citation_publication_date" content="2022-02-20" />
+  <meta name="dc.date" content="2022-03-18" />
+  <meta name="citation_publication_date" content="2022-03-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://agitter.github.io/my-manuscript/" />
   <meta name="citation_pdf_url" content="https://agitter.github.io/my-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/" />
-  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/" />
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/" />
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/5a986d4395696fde2e80bf849b28306bb1fa7ab4/))
+([permalink](https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/))
 was automatically generated
-from [agitter/my-manuscript@5a986d4](https://github.com/agitter/my-manuscript/tree/5a986d4395696fde2e80bf849b28306bb1fa7ab4)
-on February 20, 2022.
+from [agitter/my-manuscript@de4cbcf](https://github.com/agitter/my-manuscript/tree/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79)
+on March 18, 2022.
 </em></small>
 
 ## Authors
