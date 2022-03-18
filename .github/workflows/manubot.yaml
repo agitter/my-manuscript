@@ -88,7 +88,7 @@ jobs:
       - name: Install pandoc-crossref
         run: |
           cabal --version
-          stack install pandoc-crossref
+          stack install pandoc-crossref roman-numerals-0.5.1.5
           which pandoc-crossref
       - name: Build Manuscript
         run: bash build/build.sh
