@@ -84,6 +84,12 @@ jobs:
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
+      - name: Install pandoc-crossref
+        run: |
+          cabal --version
+          cabal v2-update
+          cabal v2-install --install-method=copy pandoc-crossref
+          which pandoc-crossref
       - name: Build Manuscript
         run: bash build/build.sh
       - name: Upload Artifacts
