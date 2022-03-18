@@ -79,7 +79,7 @@ jobs:
         run: |
           cabal --version
           cabal v2-update
-          cabal install pandoc-crossref roman-numerals-0.5.1.5
+          cabal v2-install --install-method=copy pandoc pandoc-crossref pandoc-citeproc
           which pandoc-crossref
       - name: Install Environment
         uses: conda-incubator/setup-miniconda@v2
