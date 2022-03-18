@@ -77,9 +77,7 @@ jobs:
             ci-cache-${{ env.DEFAULT_BRANCH_REF }}
       - name: Install pandoc-crossref
         run: |
-          cabal --version
-          cabal v2-update
-          cabal v2-install --install-method=copy --minimize-conflict-set pandoc pandoc-crossref pandoc-citeproc
+          brew install pandoc-crossref
           which pandoc-crossref
       - name: Install Environment
         uses: conda-incubator/setup-miniconda@v2
