@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://agitter.github.io/my-manuscript/" />
   <meta name="citation_pdf_url" content="https://agitter.github.io/my-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://agitter.github.io/my-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/" />
-  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/" />
-  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://agitter.github.io/my-manuscript/v/cd7f40dbd0652e5c44fa39dce0e27bf769459a87/" />
+  <meta name="manubot_html_url_versioned" content="https://agitter.github.io/my-manuscript/v/cd7f40dbd0652e5c44fa39dce0e27bf769459a87/" />
+  <meta name="manubot_pdf_url_versioned" content="https://agitter.github.io/my-manuscript/v/cd7f40dbd0652e5c44fa39dce0e27bf769459a87/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://agitter.github.io/my-manuscript/v/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79/))
+([permalink](https://agitter.github.io/my-manuscript/v/cd7f40dbd0652e5c44fa39dce0e27bf769459a87/))
 was automatically generated
-from [agitter/my-manuscript@de4cbcf](https://github.com/agitter/my-manuscript/tree/de4cbcf60d3daab8f35c72fbc8bebe3c69b48f79)
+from [agitter/my-manuscript@cd7f40d](https://github.com/agitter/my-manuscript/tree/cd7f40dbd0652e5c44fa39dce0e27bf769459a87)
 on March 18, 2022.
 </em></small>
 
