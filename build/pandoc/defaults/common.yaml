@@ -10,4 +10,3 @@ metadata:
   csl: build/assets/style.csl
   link-citations: true
   linkReferences: true
-  figPrefixTemplate: $$i$$
