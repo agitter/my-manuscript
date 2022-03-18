@@ -75,6 +75,12 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-${{ env.DEFAULT_BRANCH_REF }}
+      - name: Install pandoc-crossref
+        run: |
+          cabal --version
+          cabal v2-update
+          cabal install pandoc-crossref roman-numerals-0.5.1.5
+          which pandoc-crossref
       - name: Install Environment
         uses: conda-incubator/setup-miniconda@v2
         with:
@@ -85,11 +91,6 @@ jobs:
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
-      - name: Install pandoc-crossref
-        run: |
-          cabal --version
-          cabal install pandoc-crossref roman-numerals-0.5.1.5
-          which pandoc-crossref
       - name: Build Manuscript
         run: bash build/build.sh
       - name: Upload Artifacts
