@@ -2,12 +2,11 @@
 from: markdown
 input-file: output/manuscript.md
 filters:
-- pandoc-fignos
-- pandoc-eqnos
-- pandoc-tablenos
+- pandoc-crossref
 - pandoc-manubot-cite
 - citeproc
 wrap: preserve
 metadata:
   csl: build/assets/style.csl
   link-citations: true
+  linkReferences: true
