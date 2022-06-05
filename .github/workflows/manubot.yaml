@@ -74,13 +74,16 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-${{ env.DEFAULT_BRANCH_REF }}
-      - name: Install Environment
+      - name: Install environment # Use mamba as in https://github.com/conda-incubator/setup-miniconda#example-6-mamba
         uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: manubot
           environment-file: build/environment.yml
           auto-activate-base: false
-          miniforge-version: 'latest'
+          mamba-version: '*'
+          channels: conda-forge
+          channel-priority: true
+          use-mamba: true
       - name: List information about conda and environment
         run: |
           conda info
