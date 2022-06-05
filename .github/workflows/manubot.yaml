@@ -81,6 +81,13 @@ jobs:
           environment-file: build/environment.yml
           auto-activate-base: false
           miniforge-version: 'latest'
+      - name: List information about conda and environment
+        run: |
+          conda info
+          conda list
+          conda config --show-sources
+          conda config --show
+          printenv | sort
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
